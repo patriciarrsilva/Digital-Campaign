@@ -86,8 +86,10 @@ function geo_error(error) {
     return errorString;
 }
 
-if (!navigator.geolocation) {
-    console.log('Geolocation is not supported by your browser');
-} else {
-    locationBtn.addEventListener('click', navigator.geolocation.getCurrentPosition(geo_success, geo_error));
-}
+locationBtn.addEventListener('click', function () {
+    if (!navigator.geolocation) {
+        console.log('Geolocation is not supported by your browser');
+    } else {
+        navigator.geolocation.getCurrentPosition(geo_success, geo_error);
+    }
+});

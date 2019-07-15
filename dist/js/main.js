@@ -12,14 +12,9 @@ function geo_error(error) {
     console.log('ERROR(' + error.code + '): ' + error.message);
 }
 
-const geo_options = {
-    maximumAge: 30000,
-    timeout: 27000
-};
-
 if (!navigator.geolocation) {
     console.log('Geolocation is not supported by your browser');
 } else {
-    navigator.geolocation.getCurrentPosition(geo_success, geo_error, geo_options);
-    console.log(geo_success);
+    navigator.geolocation.getCurrentPosition(geo_success, geo_error);
+    console.log(geo_success());
 }

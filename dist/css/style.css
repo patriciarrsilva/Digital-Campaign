@@ -572,6 +572,7 @@ template {
   position: absolute;
   top: 1px;
   left: 1px;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */

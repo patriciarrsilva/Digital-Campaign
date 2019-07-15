@@ -19,7 +19,6 @@ if ('serviceWorker' in navigator) {
 
 let deferredPrompt;
 const addBtn = document.querySelector('.add-button');
-addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
     console.log('here');
@@ -46,48 +45,3 @@ window.addEventListener('beforeinstallprompt', (e) => {
         });
     });
 });
-
-// Determine if the app was successfully installed
-window.addEventListener('appinstalled', (evt) => {
-    console.log('a2hs installed');
-});
-
-// Detecting if your app is launched from the home screen
-// Safari
-if (window.navigator.standalone === true) {
-    console.log('display-mode is standalone');
-}
-// Other
-if (window.matchMedia('(display-mode: standalone)').matches) {
-    console.log('display-mode is standalone');
-}
-
-/* GEOLOCATION */
-
-const geo_success = position => {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-
-    const coordinates = {
-        latitude,
-        longitude
-    }
-
-    console.log(coordinates);
-
-    return coordinates;
-}
-
-const geo_error = error => {
-    const errorString = `ERROR(${error.code}): ${error.message}`
-
-    console.log(errorString);
-
-    return errorString;
-}
-
-if (!navigator.geolocation) {
-    console.log('Geolocation is not supported by your browser');
-} else {
-    navigator.geolocation.getCurrentPosition(geo_success, geo_error);
-}

@@ -2,7 +2,7 @@ const geo_success = position => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
-    let coordinates = {
+    const coordinates = {
         latitude,
         longitude
     }
@@ -13,7 +13,11 @@ const geo_success = position => {
 }
 
 const geo_error = error => {
-    return `ERROR(${error.code}): ${error.message}`;
+    const errorString = `ERROR(${error.code}): ${error.message}`
+
+    console.log(errorString);
+
+    return errorString;
 }
 
 if (!navigator.geolocation) {

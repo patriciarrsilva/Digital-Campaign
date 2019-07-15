@@ -7,8 +7,7 @@ const geo_success = position => {
         longitude
     }
 
-    console.log(latitude);
-    console.log(longitude);
+    console.log(coordinates);
 
     return coordinates;
 }

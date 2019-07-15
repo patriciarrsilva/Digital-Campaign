@@ -29,27 +29,25 @@ if (!navigator.geolocation) {
 }
 
 /* ADD TO HOME SCREEN */
-const btnAdd = document.getElementById('btnAdd');
-
 let deferredPrompt;
+const addBtn = document.querySelector('.add-button');
+addBtn.style.display = 'none';
 
 window.addEventListener('beforeinstallprompt', (e) => {
     // Prevent Chrome 67 and earlier from automatically showing the prompt
     e.preventDefault();
     // Stash the event so it can be triggered later.
     deferredPrompt = e;
-    // Update UI notify the user they can add to home screen
-    btnAdd.style.display = 'block';
-});
+    // Update UI to notify the user they can add to home screen
+    addBtn.style.display = 'block';
 
-btnAdd.addEventListener('click', (e) => {
-    // hide our user interface that shows our A2HS button
-    btnAdd.style.display = 'none';
-    // Show the prompt
-    deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    deferredPrompt.userChoice
-        .then((choiceResult) => {
+    addBtn.addEventListener('click', (e) => {
+        // hide our user interface that shows our A2HS button
+        addBtn.style.display = 'none';
+        // Show the prompt
+        deferredPrompt.prompt();
+        // Wait for the user to respond to the prompt
+        deferredPrompt.userChoice.then((choiceResult) => {
             if (choiceResult.outcome === 'accepted') {
                 console.log('User accepted the A2HS prompt');
             } else {
@@ -57,6 +55,7 @@ btnAdd.addEventListener('click', (e) => {
             }
             deferredPrompt = null;
         });
+    });
 });
 
 // Determine if the app was successfully installed

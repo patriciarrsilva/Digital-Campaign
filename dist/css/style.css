@@ -568,8 +568,10 @@ template {
   padding: 0;
 }
 
-#btnAdd {
-  display: none;
+.add-button {
+  position: absolute;
+  top: 1px;
+  left: 1px;
 }
 
 /*# sourceMappingURL=style.css.map */

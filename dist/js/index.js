@@ -64,7 +64,7 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
 
 const locationBtn = document.querySelector('.location-button');
 
-const geo_success = position => {
+function geo_success(position) {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
@@ -78,7 +78,7 @@ const geo_success = position => {
     return coordinates;
 }
 
-const geo_error = error => {
+function geo_error(error) {
     const errorString = `ERROR(${error.code}): ${error.message}`
 
     console.log(errorString);

@@ -62,6 +62,8 @@ if (window.matchMedia('(display-mode: standalone)').matches) {
 
 /* GEOLOCATION */
 
+const locationBtn = document.querySelector('.location-button');
+
 const geo_success = position => {
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
@@ -87,5 +89,5 @@ const geo_error = error => {
 if (!navigator.geolocation) {
     console.log('Geolocation is not supported by your browser');
 } else {
-    navigator.geolocation.getCurrentPosition(geo_success, geo_error);
+    adlocationBtndBtn.addEventListener('click', navigator.geolocation.getCurrentPosition(geo_success, geo_error));
 }

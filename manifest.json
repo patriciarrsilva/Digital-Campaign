@@ -1,0 +1,21 @@
+{
+    "short_name": "Campaign",
+    "name": "Digital Campaign",
+    "icons": [
+        {
+            "src": "./dist/img/LB_SIMBOLO.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "./dist/img/LB_SIMBOLO.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ],
+    "start_url": "/digital-campaign/?source=pwa",
+    "background_color": "#fff",
+    "display": "standalone",
+    "scope": "/digital-campaign/",
+    "theme_color": "#000"
+}

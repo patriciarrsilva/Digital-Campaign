@@ -29,6 +29,7 @@ if (!navigator.geolocation) {
 }
 
 /* ADD TO HOME SCREEN */
+const btnAdd = document.getElementById('btnAdd');
 
 let deferredPrompt;
 

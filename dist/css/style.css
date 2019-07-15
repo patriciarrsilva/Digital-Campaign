@@ -44,8 +44,7 @@ h1 {
    * 2. Show the overflow in Edge and IE.
    */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   /* 1 */
   height: 0;
   /* 1 */
@@ -82,8 +81,7 @@ abbr[title] {
   /* 1 */
   text-decoration: underline;
   /* 2 */
-  -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -230,8 +228,7 @@ fieldset {
    *    `fieldset` elements in all browsers.
    */
 legend {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   color: inherit;
   /* 2 */
@@ -265,8 +262,7 @@ textarea {
    */
 [type="checkbox"],
 [type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -352,17 +348,13 @@ template {
 
 .gridrowfull,
 .gridrow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .gridrowfull .col1,
 .gridrow .col1 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 8.33333%;
   padding-left: 15px;
   padding-right: 15px;
@@ -375,8 +367,7 @@ template {
 
 .gridrowfull .col2,
 .gridrow .col2 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 16.66667%;
   padding-left: 15px;
   padding-right: 15px;
@@ -389,8 +380,7 @@ template {
 
 .gridrowfull .col3,
 .gridrow .col3 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 25%;
   padding-left: 15px;
   padding-right: 15px;
@@ -403,8 +393,7 @@ template {
 
 .gridrowfull .col4,
 .gridrow .col4 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 33.33333%;
   padding-left: 15px;
   padding-right: 15px;
@@ -417,8 +406,7 @@ template {
 
 .gridrowfull .col5,
 .gridrow .col5 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 41.66667%;
   padding-left: 15px;
   padding-right: 15px;
@@ -431,8 +419,7 @@ template {
 
 .gridrowfull .col6,
 .gridrow .col6 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 50%;
   padding-left: 15px;
   padding-right: 15px;
@@ -445,8 +432,7 @@ template {
 
 .gridrowfull .col7,
 .gridrow .col7 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 58.33333%;
   padding-left: 15px;
   padding-right: 15px;
@@ -459,8 +445,7 @@ template {
 
 .gridrowfull .col8,
 .gridrow .col8 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 66.66667%;
   padding-left: 15px;
   padding-right: 15px;
@@ -473,8 +458,7 @@ template {
 
 .gridrowfull .col9,
 .gridrow .col9 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 75%;
   padding-left: 15px;
   padding-right: 15px;
@@ -487,8 +471,7 @@ template {
 
 .gridrowfull .col10,
 .gridrow .col10 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 83.33333%;
   padding-left: 15px;
   padding-right: 15px;
@@ -501,8 +484,7 @@ template {
 
 .gridrowfull .col11,
 .gridrow .col11 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 91.66667%;
   padding-left: 15px;
   padding-right: 15px;
@@ -515,8 +497,7 @@ template {
 
 .gridrowfull .col12,
 .gridrow .col12 {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 100%;
   padding-left: 15px;
   padding-right: 15px;
@@ -586,4 +567,9 @@ template {
 .gridrow.nogutter .col12 {
   padding: 0;
 }
+
+#btnAdd {
+  display: none;
+}
+
 /*# sourceMappingURL=style.css.map */

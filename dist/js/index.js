@@ -89,5 +89,5 @@ const geo_error = error => {
 if (!navigator.geolocation) {
     console.log('Geolocation is not supported by your browser');
 } else {
-    adlocationBtndBtn.addEventListener('click', navigator.geolocation.getCurrentPosition(geo_success, geo_error));
+    locationBtn.addEventListener('click', navigator.geolocation.getCurrentPosition(geo_success, geo_error));
 }

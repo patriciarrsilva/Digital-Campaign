@@ -47,7 +47,7 @@ function currentSlide(n) {
 }
 
 // Touch support for slideshow
-let hammer = new Hammer(slideshow);
+let hammer = new Hammer(slideshow[0]);
 
 hammer.on('swipeleft', plusSlides(-1));
 hammer.on('swiperight', plusSlides(1));

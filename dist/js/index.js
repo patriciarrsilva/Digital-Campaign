@@ -1,57 +1,16 @@
-/* SLIDESHOW */
-const slideshow = document.getElementsByClassName("slideshow-container");
-let slideIndex = 1;
-
-function showSlides(n) {
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("dot");
-
-    // if we reach the end of the slideshow, go back to the beginning
-    if (n > slides.length) {
-        slideIndex = 1;
-    }
-
-    // if we go further than the start of the slideshow, go back to the end
-    if (n < 1) {
-        slideIndex = slides.length;
-    }
-
-
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-
-    // Remove the active class from all dots
-    for (let i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-
-    // Show the selected slide
-    slides[slideIndex - 1].style.display = "block";
-
-    // Add the active class to the selected dot
-    dots[slideIndex - 1].className += " active";
-}
-
-showSlides(slideIndex);
-
-// Next/previous controls
-function plusSlides(n) {
-    console.log('from inside the plusSlides func');
-    showSlides(slideIndex += n);
-}
-
-// Thumbnail image controls
-function currentSlide(n) {
-    showSlides(slideIndex = n);
-}
-
-// Touch support for slideshow
-let hammer = new Hammer(slideshow[0]);
-
-hammer.on('swipeleft', plusSlides(-1));
-hammer.on('swiperight', plusSlides(1));
+var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
 
 /* REGISTER SERVICE WORKER TO CONTROL MAKING SITE WORK OFFLINE */
 

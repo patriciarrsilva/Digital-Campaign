@@ -64,7 +64,7 @@ if ('serviceWorker' in navigator) {
 
 /* GEOLOCATION */
 
-const locationBtn = document.querySelector('.location-button');
+/*const locationBtn = document.querySelector('.location-button');
 
 function geo_success(position) {
     const latitude = position.coords.latitude;
@@ -94,4 +94,4 @@ locationBtn.addEventListener('click', function () {
     } else {
         navigator.geolocation.getCurrentPosition(geo_success, geo_error);
     }
-});
+});*/

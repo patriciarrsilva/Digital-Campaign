@@ -38,6 +38,7 @@ showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
+    console.log('from inside the plusSlides func');
     showSlides(slideIndex += n);
 }
 

@@ -1,8 +1,9 @@
 /* SLIDESHOW */
-const slides = document.getElementsByClassName("mySlides");
+const slideshow = document.getElementsByClassName("slideshow-container");
 let slideIndex = 1;
 
 function showSlides(n) {
+    const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
 
     // if we reach the end of the slideshow, go back to the beginning
@@ -46,7 +47,7 @@ function currentSlide(n) {
 }
 
 // Touch support for slideshow
-let hammer = new Hammer(slides);
+let hammer = new Hammer(slideshow);
 
 hammer.on('swipeleft', plusSlides(-1));
 hammer.on('swiperight', plusSlides(1));

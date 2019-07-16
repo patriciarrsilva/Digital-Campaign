@@ -11,7 +11,8 @@ self.addEventListener("install", event => {
                     "/digital-campaign/dist/css/style.css",
                     "/digital-campaign/dist/js/",
                     "/digital-campaign/dist/js/main.js",
-                    "/digital-campaign/dist/js/sw-register.js"
+                    "/digital-campaign/dist/js/sw-register.js",
+                    "/manifest.json"
                 ])
                 .catch(err => {
                     console.log("Caches open failed: " + err);

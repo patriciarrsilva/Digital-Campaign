@@ -1,18 +1,18 @@
 /* SLIDESHOW */
+const slides = document.getElementsByClassName("mySlides");
 let slideIndex = 1;
 
 function showSlides(n) {
-    const slides = document.getElementsByClassName("mySlides");
     const dots = document.getElementsByClassName("dot");
 
     // if we reach the end of the slideshow, go back to the beginning
     if (n > slides.length) {
-        slideIndex = 1
+        slideIndex = 1;
     }
 
     // if we go further than the start of the slideshow, go back to the end
     if (n < 1) {
-        slideIndex = slides.length
+        slideIndex = slides.length;
     }
 
 
@@ -44,6 +44,12 @@ function plusSlides(n) {
 function currentSlide(n) {
     showSlides(slideIndex = n);
 }
+
+// Touch support for slideshow
+let hammer = new Hammer(slides);
+
+hammer.on('swipeleft', plusSlides(-1));
+hammer.on('swiperight', plusSlides(1));
 
 /* REGISTER SERVICE WORKER TO CONTROL MAKING SITE WORK OFFLINE */
 

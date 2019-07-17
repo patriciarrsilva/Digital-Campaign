@@ -8,6 +8,10 @@ Ao nível da metodologia de trabalho, após o **briefing apresentado pela marca*
 
 O processo de aprendizagem culmina com a **apresentação de um pitch aos responsáveis de comunicação das marcas convidadas**, com todas as componentes estratégicas, criativas e de desenvolvimento.
 
+## Progressive Web App
+
+This page must be accessed using HTTPS or via localhost.
+
 ## Quickstart
 
 To see it:

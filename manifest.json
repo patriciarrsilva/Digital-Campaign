@@ -3,7 +3,7 @@
     "name": "Digital Campaign",
     "icons": [
         {
-            "src": "./dist/img/LB_SIMBOLO.png",
+            "src": "./img/LB_SIMBOLO.png",
             "type": "image/png",
             "sizes": "192x192"
         }

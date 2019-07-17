@@ -8,6 +8,9 @@ Ao nível da metodologia de trabalho, após o **briefing apresentado pela marca*
 
 O processo de aprendizagem culmina com a **apresentação de um pitch aos responsáveis de comunicação das marcas convidadas**, com todas as componentes estratégicas, criativas e de desenvolvimento.
 
+This is a Progressive Web App responsive on different sized displays.
+It uses a service worker to cache some assets for offline use and includes a web app manifest to allow the instalation of the app on mobile devices.
+
 ## Quickstart
 
 To see it:
@@ -24,21 +27,45 @@ or
 
   run node server.js on the terminal and open localhost:8081/
 
-## Progressive Web App
+## [Progressive Web Apps (PWAs)](https://en.wikipedia.org/wiki/Progressive_web_applications)
 
-_Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript._
+PWAs are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript.
 
-_They are intended to work on any platform that uses a standards-compliant browser._
+They are intended to work on any platform that uses a standards-compliant browser.
 
-_Functionality includes working offline, push notifications, and device hardware access, enabling creating user experiences similar to native applications on mobile devices._
+Functionality includes working offline, push notifications, and device hardware access, enabling creating user experiences similar to native applications on mobile devices.
 
-_Since they are a type of webpage or website known as a web application, there is no requirement for developers or users to install the web apps via digital distribution systems like Apple App Store or Google Play._
+Since they are a type of webpage or website known as a web application, there is no requirement for developers or users to install the web apps via digital distribution systems like Apple App Store or Google Play.
 
-In [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_applications)
+## [Application Programming Interfaces (APIs)](https://en.wikipedia.org/wiki/Web_API)
 
-## Service worker
+### [Service worker](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)
+
+Service workers essentially act as proxy servers that sit between web applications, the browser, and the network (when available).
+
+They are intended, among other things, to enable the creation of effective offline experiences, intercept network requests and take appropriate action based on whether the network is available, and update assets residing on the server.
+
+They will also allow access to push notifications and background sync APIs.
 
 - When available in the browser, the site uses a service worker to cache responses to requests for site assets.
 - Visited pages are rendered when there is no network access.
 
 Service workers require HTTPS, although to facilitate local testing, that policy does not apply to localhost. If the production web server does not support HTTPS, then the service worker registration will fail, but the rest of the app will remain functional.
+
+### [Notifications](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and [Push](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) APIs
+
+The Notifications API allows web pages to control the display of system notifications to the end user.
+
+The Push API gives web applications the ability to receive messages pushed to them from a server, whether or not the web app is in the foreground, or even currently loaded, on a user agent.
+
+## Dependencies
+
+### [Web push](https://github.com/web-push-libs/web-push)
+
+Web push requires that push messages triggered from a backend be done via the Web Push Protocol and if you want to send data with your push message, you must also encrypt that data according to the Message Encryption for Web Push spec.
+
+### [Express](https://expressjs.com/)
+
+Express is a popular unopinionated web framework, written in JavaScript and hosted within the Node.js runtime environment.
+
+Here, it was used to test push messages from a Node.js server.

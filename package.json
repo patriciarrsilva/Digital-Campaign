@@ -13,7 +13,7 @@
     "build": "npm run clean && npm run compile && npm run prefix && npm run minify"
   },
   "browserslist": [
-    "last 2 versions"
+    "defaults"
   ],
   "keywords": [],
   "author": "",

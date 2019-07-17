@@ -26,13 +26,13 @@ or
 
 ## Progressive Web App
 
-_Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript.
+_Progressive web applications (PWAs) are a type of mobile app delivered through the web, built using common web technologies including HTML, CSS and JavaScript._
 
-They are intended to work on any platform that uses a standards-compliant browser.
+_They are intended to work on any platform that uses a standards-compliant browser._
 
-Functionality includes working offline, push notifications, and device hardware access, enabling creating user experiences similar to native applications on mobile devices.
+_Functionality includes working offline, push notifications, and device hardware access, enabling creating user experiences similar to native applications on mobile devices._
 
-Since they are a type of webpage or website known as a web application, there is no requirement for developers or users to install the web apps via digital distribution systems like Apple App Store or Google Play._
+_Since they are a type of webpage or website known as a web application, there is no requirement for developers or users to install the web apps via digital distribution systems like Apple App Store or Google Play._
 
 In [Wikipedia](https://en.wikipedia.org/wiki/Progressive_web_applications)
 

@@ -6,6 +6,7 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(cacheID).then(cache => {
             console.log('Opened cache');
+            // via localhost, remove all /digital-campaign prefixes from the items (at .addAll([items]))
             return cache
                 .addAll([
                     '/digital-campaign/',

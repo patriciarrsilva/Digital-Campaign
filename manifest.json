@@ -1,9 +1,9 @@
 {
     "short_name": "Tindeirão",
-    "name": "Tindeirãos",
+    "name": "Tindeirão",
     "icons": [
         {
-            "src": "./img/Splash-Logo@2x.png",
+            "src": "./img/Splash-Logo@2x-Transparent@2x.png",
             "type": "image/png",
             "sizes": "512x512"
         }

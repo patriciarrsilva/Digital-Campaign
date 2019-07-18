@@ -26,7 +26,7 @@ or
 
   or
 
-  run "node server.js" on the terminal and open localhost:8081/
+  run "npm install" and then "node server.js" on the terminal and open localhost:8081/
 
 ## [Progressive Web Apps (PWAs)](https://en.wikipedia.org/wiki/Progressive_web_applications)
 

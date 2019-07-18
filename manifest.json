@@ -3,7 +3,7 @@
     "name": "Tindeirão",
     "icons": [
         {
-            "src": "./img/Splash-Logo@2x-Transparent@2x.png",
+            "src": "./img/splashlogo.png",
             "type": "image/png",
             "sizes": "512x512"
         }

@@ -8,8 +8,8 @@ Ao nível da metodologia de trabalho, após o **briefing apresentado pela marca*
 
 O processo de aprendizagem culmina com a **apresentação de um pitch aos responsáveis de comunicação das marcas convidadas**, com todas as componentes estratégicas, criativas e de desenvolvimento.
 
-This is a Progressive Web App responsive on different sized displays.
-It uses a service worker to cache some assets for offline use and includes a web app manifest to allow the instalation of the app on mobile devices.
+This is a **Progressive Web App** responsive on different sized displays.
+It uses a **service worker** to cache some assets for _offline_ use and includes a **web app manifest** to allow the instalation of the app on _mobile_ devices.
 
 ## Quickstart
 
@@ -21,11 +21,11 @@ or
 
 - download the zip or clone the directory to your computer and:
 
-  open the index.html file in a web browser
+  open the index.html file in a web browser (service worker will not be available with this method)
 
   or
 
-  run node server.js on the terminal and open localhost:8081/
+  run "node server.js" on the terminal and open localhost:8081/
 
 ## [Progressive Web Apps (PWAs)](https://en.wikipedia.org/wiki/Progressive_web_applications)
 
@@ -64,8 +64,28 @@ The Push API gives web applications the ability to receive messages pushed to th
 
 Web push requires that push messages triggered from a backend be done via the Web Push Protocol and if you want to send data with your push message, you must also encrypt that data according to the Message Encryption for Web Push spec.
 
+The VAPID (Voluntary Application Server Identification) protocol (supported by Chrome and Firefox) was used to identify the app for the push service. This lets the push service contact the admin if anything goes wrong with the service.
+
+In the command line, "web-push generate-vapid-keys [--json]" generates a public/private VAPID key pair (the keys are URL Safe Base64 encoded strings).
+
 ### [Express](https://expressjs.com/)
 
 Express is a popular unopinionated web framework, written in JavaScript and hosted within the Node.js runtime environment.
 
 Here, it was used to test push messages from a Node.js server.
+
+### [Node-sass](https://github.com/sass/node-sass)
+
+Compiles .scss to .css files.
+
+### [PostCSS CLI](https://github.com/postcss/postcss-cli)
+
+Necessary for Autoprefixer.
+
+### [Autoprefixer](https://github.com/postcss/autoprefixer)
+
+PostCSS plugin to parse CSS and add vendor prefixes to CSS rules. Used here with defaults browserslist.
+
+### [clean-css](https://github.com/jakubpawlowicz/clean-css-cli)
+
+Handle CSS minification.

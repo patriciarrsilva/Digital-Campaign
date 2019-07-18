@@ -1,7 +1,7 @@
 /* Node.js server */
 /*
  * Push the message from a Node.js server:
- * With the server running, run node node/main.js in the terminal
+ * With the server running, run "node node/main.js" in the terminal
  */
 
 const webPush = require('web-push');

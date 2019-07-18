@@ -3,7 +3,7 @@
     "name": "Digital Campaign",
     "icons": [
         {
-            "src": "./img/logoyellow192.png",
+            "src": "./img/logo192.png",
             "type": "image/png",
             "sizes": "192x192"
         },

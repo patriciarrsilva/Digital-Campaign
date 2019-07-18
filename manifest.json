@@ -3,14 +3,9 @@
     "name": "Tindeirão",
     "icons": [
         {
-            "src": "/img/logo192.png",
+            "src": "./img/LB_SIMBOLO.png",
             "type": "image/png",
             "sizes": "192x192"
-        },
-        {
-            "src": "/img/logo512.png",
-            "type": "image/png",
-            "sizes": "512x512"
         }
     ],
     "start_url": "/digital-campaign/",

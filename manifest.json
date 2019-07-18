@@ -11,5 +11,5 @@
     "start_url": "/digital-campaign/",
     "background_color": "#ffd600",
     "display": "standalone",
-    "theme_color": "#dd052b"
+    "theme_color": "#000"
 }

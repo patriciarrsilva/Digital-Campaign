@@ -1,6 +1,6 @@
 {
-    "short_name": "Tindeirão",
-    "name": "Tindeirão",
+    "short_name": "Campaign",
+    "name": "Digital Campaign",
     "icons": [
         {
             "src": "./img/LB_SIMBOLO.png",
@@ -9,7 +9,7 @@
         }
     ],
     "start_url": "/digital-campaign/",
-    "background_color": "#ffd600",
+    "background_color": "#fff",
     "display": "standalone",
-    "theme_color": "#fff"
+    "theme_color": "#000"
 }

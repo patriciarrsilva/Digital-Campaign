@@ -9,6 +9,7 @@ Ao nível da metodologia de trabalho, após o **briefing apresentado pela marca*
 O processo de aprendizagem culmina com a **apresentação de um pitch aos responsáveis de comunicação das marcas convidadas**, com todas as componentes estratégicas, criativas e de desenvolvimento.
 
 This is a **Progressive Web App** responsive on different sized displays.
+
 It uses a **service worker** to cache some assets for _offline_ use and includes a **web app manifest** to allow the instalation of the app on _mobile_ devices.
 
 ## Quickstart
@@ -21,7 +22,7 @@ or
 
 - download the zip or clone the directory to your computer and:
 
-  open the index.html file in a web browser (service worker will not be available with this method)
+  open the index.html file in a web browser (service worker does not work this way)
 
   or
 

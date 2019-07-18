@@ -56,8 +56,8 @@ const app = (() => {
     let isSubscribed = false;
     let swRegistration = null;
 
-    const notifyButton = document.querySelector('.js-notify-btn'); // Notify me!
-    const pushButton = document.querySelector('.js-push-btn'); // Enable Push Messaging
+    // const notifyButton = document.querySelector('.js-notify-btn'); // Notify me!
+    // const pushButton = document.querySelector('.js-push-btn'); // Enable Push Messaging
 
     // check for notification support (the real app should perform some logic to compensate for lack of support)
     if (!('Notification' in window)) {
@@ -72,7 +72,7 @@ const app = (() => {
 
 
     // display a Notification (here, for demonstration purposes)
-    function displayNotification() {
+    /*function displayNotification() {
         if (Notification.permission == 'granted') {
             navigator.serviceWorker.getRegistration().then(reg => {
 
@@ -103,20 +103,20 @@ const app = (() => {
                 reg.showNotification('Hello world!', options);
             });
         }
-    }
+    }*/
 
 
     // Set the initial subscription value
     function initializeUI() {
         // add a click event listener to the "Enable Push" button
-        pushButton.addEventListener('click', () => {
+        /*pushButton.addEventListener('click', () => {
             pushButton.disabled = true;
             if (isSubscribed) {
                 unsubscribeUser();
             } else {
                 subscribeUser();
             }
-        });
+        });*/
 
         swRegistration.pushManager.getSubscription()
             .then(subscription => {
@@ -201,19 +201,19 @@ const app = (() => {
 
     function updateBtn() {
         if (Notification.permission === 'denied') {
-            pushButton.textContent = 'Push Messaging Blocked';
-            pushButton.disabled = true;
+            // pushButton.textContent = 'Push Messaging Blocked';
+            // pushButton.disabled = true;
             updateSubscriptionOnServer(null);
             return;
         }
 
-        if (isSubscribed) {
+        /*if (isSubscribed) {
             pushButton.textContent = 'Disable Push Messaging';
         } else {
             pushButton.textContent = 'Enable Push Messaging';
         }
 
-        pushButton.disabled = false;
+        pushButton.disabled = false;*/
     }
 
     function urlB64ToUint8Array(base64String) {
@@ -231,9 +231,9 @@ const app = (() => {
         return outputArray;
     }
 
-    notifyButton.addEventListener('click', () => {
+    /*notifyButton.addEventListener('click', () => {
         displayNotification();
-    });
+    });*/
 
     // register service worker
     if ('serviceWorker' in navigator) {
@@ -254,7 +254,7 @@ const app = (() => {
         });
     } else {
         console.warn('Push messaging is not supported');
-        pushButton.textContent = 'Push Not Supported';
+        // pushButton.textContent = 'Push Not Supported';
     }
 
 })();

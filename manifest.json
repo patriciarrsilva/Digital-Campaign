@@ -3,13 +3,13 @@
     "name": "Tindeirão",
     "icons": [
         {
-            "src": "./img/splashlogo.png",
+            "src": "./img/logo.png",
             "type": "image/png",
             "sizes": "512x512"
         }
     ],
     "start_url": "/digital-campaign/",
-    "background_color": "#FFD600",
+    "background_color": "#ffd600",
     "display": "standalone",
-    "theme_color": "#DD052B"
+    "theme_color": "#dd052b"
 }

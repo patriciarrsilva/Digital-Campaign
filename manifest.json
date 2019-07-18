@@ -8,7 +8,7 @@
             "sizes": "192x192"
         }
     ],
-    "start_url": "digital-campaign/?source=pwa",
+    "start_url": "digital-campaign/",
     "background_color": "#fff",
     "display": "standalone",
     "theme_color": "#000"

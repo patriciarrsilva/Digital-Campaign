@@ -61,6 +61,10 @@ The Push API gives web applications the ability to receive messages pushed to th
 
 ## Dependencies
 
+### [Swiper](https://idangero.us/swiper/)
+
+
+
 ### [Web push](https://github.com/web-push-libs/web-push)
 
 Web push requires that push messages triggered from a backend be done via the Web Push Protocol and if you want to send data with your push message, you must also encrypt that data according to the Message Encryption for Web Push spec.

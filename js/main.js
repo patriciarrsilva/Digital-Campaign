@@ -56,8 +56,8 @@ const app = (() => {
     let isSubscribed = false;
     let swRegistration = null;
 
-    const notifyButton = document.querySelector('.js-notify-btn'); // Notify me!
-    const pushButton = document.querySelector('.js-push-btn'); // Enable Push Messaging
+    // const notifyButton = document.querySelector('.js-notify-btn'); // Notify me!
+    // const pushButton = document.querySelector('.js-push-btn'); // Enable Push Messaging
 
     // check for notification support (the real app should perform some logic to compensate for lack of support)
     if (!('Notification' in window)) {
@@ -109,14 +109,14 @@ const app = (() => {
     // Set the initial subscription value
     function initializeUI() {
         // add a click event listener to the "Enable Push" button
-        pushButton.addEventListener('click', () => {
+        /*pushButton.addEventListener('click', () => {
             pushButton.disabled = true;
             if (isSubscribed) {
                 unsubscribeUser();
             } else {
                 subscribeUser();
             }
-        });
+        });*/
 
         swRegistration.pushManager.getSubscription()
             .then(subscription => {
@@ -231,9 +231,9 @@ const app = (() => {
         return outputArray;
     }
 
-    notifyButton.addEventListener('click', () => {
+    /*notifyButton.addEventListener('click', () => {
         displayNotification();
-    });
+    });*/
 
     // register service worker
     if ('serviceWorker' in navigator) {

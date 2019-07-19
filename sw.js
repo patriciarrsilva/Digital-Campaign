@@ -10,11 +10,17 @@ self.addEventListener('install', event => {
             return cache
                 .addAll([
                     '/digital-campaign/',
-                    '/digital-campaign/index.html',
-                    '/digital-campaign/css/style.css',
-                    '/digital-campaign/dist/js/main.js',
-                    '/digital-campaign/manifest.json',
                     '/digital-campaign/sw.js',
+                    '/digital-campaign/manifest.json',
+                    '/digital-campaign/index.html',
+                    '/digital-campaign/html/geolocation.html',
+                    '/digital-campaign/html/home.html',
+                    '/digital-campaign/css/style.css',
+                    '/digital-campaign/js/sw-register.js',
+                    '/digital-campaign/js/year.js',
+                    '/digital-campaign/js/location.js',
+                    '/digital-campaign/js/slider.js',
+
                 ])
                 .catch(err => {
                     console.log('Caches open failed: ' + err);

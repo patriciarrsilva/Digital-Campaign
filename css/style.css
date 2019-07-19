@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -335,6 +336,11 @@ template {
    */
 [hidden] {
   display: none;
+}
+
+@font-face {
+  font-family: DINCond-BlackAlternate;
+  src: url(../fonts/DINCond-BlackAlternate.otf);
 }
 
 /**
@@ -1302,11 +1308,70 @@ button.swiper-pagination-bullet {
 
 * {
   box-sizing: border-box;
-  font-family: "DINCond-BoldAlternate", "Roboto Condensed", sans-serif;
+}
+
+body {
+  font-family: "DINCond-BlackAlternate", "Roboto", sans-serif;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.button {
+  background: #e54847;
+  border-radius: 6px;
+  box-shadow: 0 7px 0 #c14444;
+  color: white;
+  display: block;
+  font-size: 24px;
+  height: 52px;
+  width: 175px;
+  margin: 73px auto 81px;
+  padding: 12px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.year-header,
+.year-form,
+.year-footer {
+  text-align: center;
+}
+
+.year-body {
+  background: #ffd600;
+  display: flex;
+  align-items: center;
+}
+
+.year-title {
+  font-size: 22px;
+  margin: 0 0 29px;
+  text-transform: uppercase;
+}
+
+.year-footer {
+  color: #dd052b;
+  font-size: 16px;
+}
+
+.year-text {
+  margin: 5px;
+}
+
+.number-input {
+  color: #bc001f;
+  font-family: "Caveat Brush", "DINCond-BlackAlternate", "Roboto", sans-serif;
+  font-size: 72px;
+  height: 77px;
+  width: 50px;
+  margin: 0 9px;
   padding: 0;
 }
 
@@ -1315,7 +1380,7 @@ ul {
   width: 100vw;
   position: relative;
   text-align: center;
-  background: #DD052B;
+  background: #e54847;
 }
 
 .home-link {
@@ -1349,8 +1414,30 @@ ul {
   width: 80px;
 }
 
+.location-container {
+  background: #ffd600;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 70px);
+  text-align: center;
+}
+
+.location-button {
+  display: block;
+}
+
+.negative-button {
+  background: none;
+  border: none;
+  color: #e54847;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .enter-button {
   width: 100vw;
+  height: 60px;
+  text-transform: uppercase;
 }
 
 html,
@@ -1361,7 +1448,6 @@ body {
 
 body {
   background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;

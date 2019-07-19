@@ -12,67 +12,39 @@
     <link rel="stylesheet" href="./css/style.css" />
 </head>
 
-<body>
-    <!-- <button class="location-button">Share my location</button> -->
+<body class="year-body">
     <!-- <button class="js-notify-btn">Notify me!</button> -->
     <!-- <button disabled class="js-push-btn">Enable Push Messaging</button><br><br> -->
 
-    <nav class="nav">
-        <button class="nav-button qr-button">
-            <img class="icon" src="img/menu.svg" alt="hamburger icon">
-        </button>
-        <a href="/" class="home-link">
-            <img class="home-logo" src="./img/navlogo.png" alt="tindeirão logo">
-        </a>
-        <button class="nav-button menu-button">
-            <img class="icon" src="img/menu.svg" alt="hamburger icon">
-        </button>
-    </nav>
+    <!-- FIRST SCREEN: BIRTH YEAR -->
+    <div class="container">
+        <header class="year-header">
+            <h1 class="year-title">Em que ano nasceste?</h1>
+        </header>
 
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide">Slide 1</div>
-            <div class="swiper-slide">Slide 2</div>
-            <div class="swiper-slide">Slide 3</div>
-        </div>
+        <main>
+            <form class="year-form" name="year">
+                <input class="number-input" type="number" min="1" max="9" minlength="1" maxlength="1" step="1"
+                    oninput="autotab(this, document.year.second)" required autofocus>
+                <input class="number-input" name="second" type="number" min="1" max="9" minlength="1" maxlength="1"
+                    step="1" required oninput="autotab(this, document.year.third)">
+                <input class="number-input" name="third" type="number" min="1" max="9" minlength="1" maxlength="1"
+                    step="1" required oninput="autotab(this, document.year.fourth)">
+                <input class="number-input" name="fourth" type="number" min="1" max="9" minlength="1" maxlength="1"
+                    step="1" required>
 
-        <div class="swiper-pagination"></div>
+                <!--TODO: function to verify age-->
+                <a class="button" href="./html/geolocation.html">'Bora!</a>
+            </form>
+        </main>
 
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <footer class="year-footer">
+            <p class="year-text">Sê responsável.</p>
+            <p class="year-text">Beirão é com moderação.</p>
+        </footer>
     </div>
 
-    <button class="enter-button">Entrar</button>
-    <button class="enter-button">Registar</button>
-    <!--<nav>
-        <div>Home</div>
-
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
-
-        <ul class="navigation-list">
-            <li><a href="#">Tradição</a></li>
-            <li><a href="#">Academia</a></li>
-            <li><a href="#">Amizade</a></li>
-            <li><a href="#">Perfil</a></li>
-            <li><a href="#">Logout</a></li>
-        </ul>
-    </nav>
-
-    <div>QR Code Reader</div>
-
-    
-    <nav>
-        <ul>
-            <li><a href="#">Tradição</a></li>
-            <li><a href="#">Academia</a></li>
-            <li><a href="#">Amizade</a></li>
-        </ul>
-    </nav>-->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/year.js"></script>
 </body>
 
 </html>

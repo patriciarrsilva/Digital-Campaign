@@ -1,0 +1,38 @@
+.year-header,
+.year-form,
+.year-footer {
+  text-align: center;
+}
+
+.year- {
+  &body {
+    background: $yellow;
+    display: flex;
+    align-items: center;
+  }
+
+  &title {
+    font-size: 22px;
+    margin: 0 0 29px;
+    text-transform: uppercase;
+  }
+
+  &footer {
+    color: $text-red;
+    font-size: 16px;
+  }
+
+  &text {
+    margin: 5px;
+  }
+}
+
+.number-input {
+  color: $input-red;
+  font-family: "Caveat Brush", "DINCond-BlackAlternate", "Roboto", sans-serif;
+  font-size: 72px;
+  height: 77px;
+  width: 50px;
+  margin: 0 9px;
+  padding: 0;
+}

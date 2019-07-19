@@ -7,10 +7,32 @@
 
 * {
   box-sizing: border-box;
-  font-family: "DINCond-BoldAlternate", "Roboto Condensed", sans-serif;
+}
+
+body {
+  font-family: "DINCond-BlackAlternate", "Roboto", sans-serif;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.button {
+  background: $red;
+  border-radius: 6px;
+  box-shadow: 0 7px 0 $shadow-red;
+  color: white;
+  display: block;
+  font-size: 24px;
+  height: 52px;
+  width: 175px;
+  margin: 73px auto 81px;
+  padding: 12px 0;
+  text-decoration: none;
+  text-transform: uppercase;
 }

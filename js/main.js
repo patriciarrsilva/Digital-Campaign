@@ -1,5 +1,7 @@
 /* main JavaScript for the app */
 
+/* SWIPER SLIDER */
+
 var swiper = new Swiper('.swiper-container', {
     slidesPerView: 1,
     spaceBetween: 30,
@@ -13,40 +15,6 @@ var swiper = new Swiper('.swiper-container', {
         prevEl: '.swiper-button-prev',
     },
 });
-
-/* GEOLOCATION */
-
-/*const locationBtn = document.querySelector('.location-button');
-
-function geo_success(position) {
-    const latitude = position.coords.latitude;
-    const longitude = position.coords.longitude;
-
-    const coordinates = {
-        latitude,
-        longitude
-    }
-
-    console.log(coordinates);
-
-    return coordinates;
-}
-
-function geo_error(error) {
-    const errorString = `ERROR(${error.code}): ${error.message}`
-
-    console.log(errorString);
-
-    return errorString;
-}
-
-locationBtn.addEventListener('click', function () {
-    if (!navigator.geolocation) {
-        console.log('Geolocation is not supported by your browser');
-    } else {
-        navigator.geolocation.getCurrentPosition(geo_success, geo_error);
-    }
-});*/
 
 /* SERVICE WORKER */
 
@@ -66,10 +34,10 @@ const app = (() => {
     }
 
     // request permission to show notifications (the real app should request permission when a user opts into a specific feature that requires it)
-    Notification.requestPermission(status => {
+    // TODO: activate again after development
+    /*Notification.requestPermission(status => {
         console.log('Notification permission status:', status);
-    });
-
+    });*/
 
     // display a Notification (here, for demonstration purposes)
     /*function displayNotification() {
@@ -104,7 +72,6 @@ const app = (() => {
             });
         }
     }*/
-
 
     // Set the initial subscription value
     function initializeUI() {

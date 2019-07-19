@@ -1,0 +1,19 @@
+.location-container {
+  background: $yellow;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 70px);
+  text-align: center;
+}
+
+.location-button {
+  display: block;
+}
+
+.negative-button {
+  background: none;
+  border: none;
+  color: $red;
+  text-decoration: none;
+  text-transform: uppercase;
+}

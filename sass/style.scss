@@ -1,13 +1,13 @@
 @import "normalize";
 @import url("https://fonts.googleapis.com/css?family=Caveat+Brush|Roboto&display=swap");
 @import "fonts";
-@import "swiper";
 @import "variables";
+@import "swiper";
 // @import "utils";
 @import "grid";
 @import "global";
 @import "year";
-@import "header";
+@import "top-nav";
 @import "geolocation";
-@import "enter-home";
-@import "slideshow";
+@import "bottom-nav";
+@import "slider";

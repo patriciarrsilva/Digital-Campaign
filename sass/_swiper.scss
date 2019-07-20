@@ -338,8 +338,8 @@
   height: 8px;
   display: inline-block;
   border-radius: 100%;
-  background: #000;
-  opacity: 0.2;
+  background: $red /*#000*/;
+  //opacity: 0.2;
 }
 button.swiper-pagination-bullet {
   border: none;
@@ -696,4 +696,11 @@ button.swiper-pagination-bullet {
 .swiper-container-coverflow .swiper-wrapper {
   perspective: 1200px;
   -ms-perspective: 1200px;
+}
+
+/* MINE */
+
+.swiper-pagination-red .swiper-pagination-bullet-active {
+  background: $red;
+  box-shadow: 0 4px 0 $shadow-red;
 }

@@ -9,6 +9,7 @@
     background: $yellow;
     display: flex;
     align-items: center;
+    height: 100vh;
   }
 
   &title {
@@ -35,4 +36,8 @@
   width: 50px;
   margin: 0 9px;
   padding: 0;
+}
+
+.verify-button {
+  margin: 73px auto 81px;
 }

@@ -8,10 +8,11 @@
 
 .home-link {
   display: inline-block;
+  padding: 20px 0;
 }
 
 .home-logo {
-  height: 70px;
+  height: 26.98px;
 }
 
 .nav-button {
@@ -32,7 +33,11 @@
   right: 0;
 }
 
-.icon {
-  height: 70px;
-  width: 80px;
+.nav-icon {
+  height: 24.67px;
+  //width: 25.3px;
+}
+
+.location-icon {
+  height: 130px;
 }

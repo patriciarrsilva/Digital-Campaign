@@ -13,14 +13,18 @@
 
   &title {
     font-size: 30px;
+    margin: 29px auto 36px;
   }
 
   &description {
     font-size: 22px;
+    max-width: 301px;
+    margin: 0;
   }
 
   &button {
     display: block;
+    margin: 24px auto 28px;
   }
 }
 

@@ -1,0 +1,33 @@
+.amizade- {
+  &title {
+    color: $text-red;
+    font-size: 30px;
+    margin: 19px 0 43px;
+    text-transform: uppercase;
+  }
+
+  &container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.amizade-button {
+  background: $white;
+  border-radius: 6px;
+  box-shadow: 0 8px 0 $grey;
+  color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 5px 34px;
+  flex: 1 1 150px;
+}
+
+.amizade-button__description {
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
+}

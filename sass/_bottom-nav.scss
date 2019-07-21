@@ -1,28 +1,30 @@
-.button-list {
-  display: flex;
-  justify-content: space-evenly;
-}
+.bottom- {
+  &list {
+    display: flex;
+    justify-content: space-evenly;
+  }
 
-.bottom-button {
-  background: $white;
-  border-radius: 6px;
-  box-shadow: 0 12px 0 $grey;
-  margin: 20px;
-  height: 96px;
-}
+  &button {
+    background: $white;
+    border-radius: 6px;
+    box-shadow: 0 12px 0 $grey;
+    height: 96px;
+    margin: 20px;
 
-.bottom-button:active {
-  background: $red;
-  box-shadow: 0 12px 0 $shadow-red;
-}
+    &:active {
+      background: $red;
+      box-shadow: 0 12px 0 $shadow-red;
 
-.bottom-button:active .button-name {
-  color: $white;
-}
+      & .bottom-button__name {
+        color: $white;
+      }
+    }
 
-.button-name {
-  color: $black;
-  font-size: 18px;
-  margin: 0;
-  text-transform: uppercase;
+    &__name {
+      color: $black;
+      font-size: 18px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+  }
 }

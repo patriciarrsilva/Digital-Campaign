@@ -1,9 +1,8 @@
 .top-nav {
+  background: $red;
   height: 70px;
   width: 100vw;
   position: relative;
-  text-align: center;
-  background: $red;
 }
 
 .home-link {
@@ -16,13 +15,13 @@
 }
 
 .nav-button {
-  height: 70px;
-  width: 80px;
-  position: absolute;
-  top: 0;
   background: transparent;
   border: none;
+  height: 70px;
+  width: 80px;
   padding: 0;
+  position: absolute;
+  top: 0;
 }
 
 .qr-button {
@@ -35,7 +34,6 @@
 
 .nav-icon {
   height: 24.67px;
-  //width: 25.3px;
 }
 
 .location-icon {

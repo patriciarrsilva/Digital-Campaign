@@ -1309,8 +1309,9 @@ button.swiper-pagination-bullet {
 }
 
 body {
-  font-family: "DINCond-BlackAlternate", "Roboto", sans-serif;
   background: #ffd600;
+  font-family: "DINCond-BlackAlternate", "Roboto", sans-serif;
+  text-align: center;
 }
 
 a {
@@ -1338,12 +1339,6 @@ ul {
   height: 52px;
   padding: 12px 25px;
   text-transform: uppercase;
-}
-
-.year-header,
-.year-form,
-.year-footer {
-  text-align: center;
 }
 
 .year-body {
@@ -1382,11 +1377,10 @@ ul {
 }
 
 .top-nav {
+  background: #e54847;
   height: 70px;
   width: 100vw;
   position: relative;
-  text-align: center;
-  background: #e54847;
 }
 
 .home-link {
@@ -1399,13 +1393,13 @@ ul {
 }
 
 .nav-button {
-  height: 70px;
-  width: 80px;
-  position: absolute;
-  top: 0;
   background: transparent;
   border: none;
+  height: 70px;
+  width: 80px;
   padding: 0;
+  position: absolute;
+  top: 0;
 }
 
 .qr-button {
@@ -1428,11 +1422,6 @@ ul {
   display: flex;
   align-items: center;
   height: calc(100vh - 70px);
-  text-align: center;
-}
-
-.location-container {
-  margin: 0 auto;
 }
 
 .location-title {
@@ -1442,8 +1431,8 @@ ul {
 
 .location-description {
   font-size: 22px;
-  max-width: 301px;
   margin: 0;
+  max-width: 301px;
 }
 
 .location-button {
@@ -1459,7 +1448,7 @@ ul {
   text-transform: uppercase;
 }
 
-.button-list {
+.bottom-list {
   display: flex;
   justify-content: space-evenly;
 }
@@ -1468,8 +1457,8 @@ ul {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 12px 0 #c2c2c2;
-  margin: 20px;
   height: 96px;
+  margin: 20px;
 }
 
 .bottom-button:active {
@@ -1477,11 +1466,11 @@ ul {
   box-shadow: 0 12px 0 #c14444;
 }
 
-.bottom-button:active .button-name {
+.bottom-button:active .bottom-button__name {
   color: #fff;
 }
 
-.button-name {
+.bottom-button__name {
   color: #000;
   font-size: 18px;
   margin: 0;
@@ -1527,26 +1516,50 @@ body {
 }
 
 /* MINE */
-.slider-nav {
-  margin-top: 19px;
+.swiper-nav {
   height: calc(100vh - 70px - 19px - 136px);
-}
-
-.swiper-slide-one {
-  background: #ffd600 url("../img/first-slide2.png") center/contain no-repeat;
-}
-
-.swiper-slide-two {
-  background: #ffd600 url("../img/second-slide2.png") center/contain no-repeat;
-}
-
-.swiper-slide-three {
-  background: #ffd600 url("../img/third-slide2.png") center/contain no-repeat;
+  margin-top: 19px;
 }
 
 .swiper-link {
   height: 100%;
-  width: 100%;
+  width: 75%;
+}
+
+.swiper-image {
+  max-height: 100%;
+}
+
+.amizade-title {
+  color: #dd052b;
+  font-size: 30px;
+  margin: 19px 0 43px;
+  text-transform: uppercase;
+}
+
+.amizade-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.amizade-button {
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 8px 0 #c2c2c2;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  margin: 0 5px 34px;
+  flex: 1 1 150px;
+}
+
+.amizade-button__description {
+  font-size: 24px;
+  margin: 0;
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=style.css.map */

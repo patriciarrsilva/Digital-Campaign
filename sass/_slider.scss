@@ -39,24 +39,18 @@ body {
 
 /* MINE */
 
-.slider-nav {
-  margin-top: 19px;
-  height: calc(100vh - 70px - 19px - 136px);
-}
+.swiper- {
+  &nav {
+    height: calc(100vh - 70px - 19px - 136px);
+    margin-top: 19px;
+  }
 
-.swiper-slide-one {
-  background: $yellow url("../img/first-slide2.png") center/contain no-repeat;
-}
+  &link {
+    height: 100%;
+    width: 75%;
+  }
 
-.swiper-slide-two {
-  background: $yellow url("../img/second-slide2.png") center/contain no-repeat;
-}
-
-.swiper-slide-three {
-  background: $yellow url("../img/third-slide2.png") center/contain no-repeat;
-}
-
-.swiper-link {
-  height: 100%;
-  width: 100%;
+  &image {
+    max-height: 100%;
+  }
 }

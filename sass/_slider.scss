@@ -40,5 +40,23 @@ body {
 /* MINE */
 
 .slider-nav {
-  height: calc(100vh - 70px - 136px);
+  margin-top: 19px;
+  height: calc(100vh - 70px - 19px - 136px);
+}
+
+.swiper-slide-one {
+  background: $yellow url("../img/first-slide2.png") center/contain no-repeat;
+}
+
+.swiper-slide-two {
+  background: $yellow url("../img/second-slide2.png") center/contain no-repeat;
+}
+
+.swiper-slide-three {
+  background: $yellow url("../img/third-slide2.png") center/contain no-repeat;
+}
+
+.swiper-link {
+  height: 100%;
+  width: 100%;
 }

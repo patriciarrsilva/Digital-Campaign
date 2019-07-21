@@ -1310,6 +1310,7 @@ button.swiper-pagination-bullet {
 
 body {
   font-family: "DINCond-BlackAlternate", "Roboto", sans-serif;
+  background: #ffd600;
 }
 
 a {
@@ -1346,7 +1347,6 @@ ul {
 }
 
 .year-body {
-  background: #ffd600;
   display: flex;
   align-items: center;
   height: 100vh;
@@ -1425,7 +1425,6 @@ ul {
 }
 
 .location-main {
-  background: #ffd600;
   display: flex;
   align-items: center;
   height: calc(100vh - 70px);
@@ -1458,10 +1457,6 @@ ul {
   color: #e54847;
   font-size: 18px;
   text-transform: uppercase;
-}
-
-.bottom-nav {
-  background: #ffd600;
 }
 
 .button-list {
@@ -1533,7 +1528,25 @@ body {
 
 /* MINE */
 .slider-nav {
-  height: calc(100vh - 70px - 136px);
+  margin-top: 19px;
+  height: calc(100vh - 70px - 19px - 136px);
+}
+
+.swiper-slide-one {
+  background: #ffd600 url("../img/first-slide2.png") center/contain no-repeat;
+}
+
+.swiper-slide-two {
+  background: #ffd600 url("../img/second-slide2.png") center/contain no-repeat;
+}
+
+.swiper-slide-three {
+  background: #ffd600 url("../img/third-slide2.png") center/contain no-repeat;
+}
+
+.swiper-link {
+  height: 100%;
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */

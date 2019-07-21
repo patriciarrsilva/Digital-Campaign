@@ -23,10 +23,56 @@
         <a href="./home.html" class="home-link">
             <img class="home-logo" src="../img/home-logo2.png" alt="tindeirão logo">
         </a>
-        <button class="nav-button menu-button">
+        <button class="nav-button menu-button openbtn" onclick="openNav()">
             <img class="nav-icon" src="../img/menu2.png" alt="hamburger icon">
         </button>
     </nav>
+
+    <div id="mySidepanel" class="sidepanel">
+        <div class="account">
+            <button class="closebtn" onclick="closeNav()">×</button>
+
+            <div class="profile-id">
+                <img src="../img/xmark.png" alt="profile image">
+                <p>Larocas</p>
+            </div>
+
+            <ul>
+                <li><a>Perfil</a></li>
+                <li><a>Os meus desfios</a></li>
+            </ul>
+
+            <button>Sair da conta</button>
+        </div>
+
+        <div>
+            <ul>
+                <li><a>Amizade</a></li>
+                <li><a>Tradição</a></li>
+                <li><a>Acedemia</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Família Beirão</h2>
+
+            <ul>
+                <li><a>Website</a></li>
+                <li><a>ClubeBeirão</a></li>
+            </ul>
+
+            <ul>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+                <li><a></a></li>
+            </ul>
+        </div>
+
+        <p><a>Termos e Condições</a> | <a>Regulamentos</a></p>
+    </div>
+
 
     <h1 class="amizade-title">Amizade</h1>
 
@@ -59,6 +105,8 @@
             <p class="amizade-button__description">Serenata</p>
         </a>
     </div>
+
+    <script src="../js/sidepanel.js"></script>
 </body>
 
 </html>

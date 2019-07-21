@@ -1,0 +1,28 @@
+.sidepanel {
+  height: 100vh; /* Specify a height */
+  width: 0; /* 0 width - change this with JavaScript */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: $yellow;
+  overflow-x: hidden; /* Disable horizontal scroll */
+  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+}
+
+.account {
+  background: $white;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  background: transparent;
+  border: none;
+  font-size: 36px;
+  padding-right: 20px;
+  text-align: right;
+  width: 100%;
+}
+
+.profile-id {
+}

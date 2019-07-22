@@ -1,56 +1,72 @@
 .sidepanel {
-  height: 100vh; /* Specify a height */
-  width: 0; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0;
-  right: 0;
   background-color: $yellow;
-  overflow-x: hidden; /* Disable horizontal scroll */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
+  height: 100vh;
+  width: 0;
+  overflow-x: hidden;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 11;
   text-align: left;
+  transition: 0.5s;
+
+  &__footer {
+    font-size: 18px;
+    margin: 20.69px 0;
+    text-align: center;
+  }
 }
 
 .account {
   background: $white;
   border-bottom: 9px solid $text-red;
   position: relative;
+
+  &__container {
+    padding: 0 25px;
+  }
 }
 
-.account__container {
-  padding: 0 25px;
-}
-
-/* Position and style the close button (top right corner) */
-.sidepanel .closebtn {
+.close-button {
   background: transparent;
   border: none;
-  font-size: 36px;
+  margin: 14.89px 0 12.21px;
   padding: 0;
   text-align: right;
   width: 100%;
+
+  &__img {
+    height: 15.21px;
+    width: 15.08px;
+   }
 }
 
-.profile-id {
-  display: flex;
-  align-items: center;
-}
+.profile- {
+  &id {
+    display: flex;
+    align-items: center;
 
-.profile-id__photo {
-  margin: 0 8px 0 0;
-  max-height: 52.75px;
-  max-width: 52.75px;
-}
+      &__photo {
+        margin: 0 8px 0 0;
+        height: 52.75px;
+        width: 52.75px;
+      }
 
-.profile-id__name {
-  font-size: 30px;
-  margin: 0;
-}
+      &__name {
+        font-size: 30px;
+        margin: 0;
+      }
+  }
 
-.profile-info {
-  font-size: 22px;
-  margin: 23.93px 0 0 0;
-  padding-bottom: 5px;
+  &info {
+    font-size: 22px;
+    margin: 19.43px 0 0 0;
+    padding-bottom: 5px;
+
+    &__link {
+      margin: 4.5px 0;
+    }
+  }
 }
 
 .logout-button {
@@ -68,17 +84,33 @@
 }
 
 .app-nav {
-  border-bottom: 1px solid $text-red;
   font-size: 30px;
   padding: 26px 0 34.42px;
   text-transform: uppercase;
-}
 
-.app-nav__mid-link {
-  padding: 26px 0;
+  &__mid-link {
+    padding: 26px 0;
+  }
 }
 
 .nav-beirao {
-  font-size: 30px;
-  text-transform: uppercase;
+  border-bottom: 1px solid $text-red;
+  border-top: 1px solid $text-red;
+
+  &__title {
+    font-size: 30px;
+    margin: 25.69px 0 12px;
+    text-transform: uppercase;
+  }
+
+  &__links {
+    font-size: 22px;
+  }
+
+  &__link {
+    margin: 9px 0;
+  }
+}
+
+@media (min-width: 576px) {
 }

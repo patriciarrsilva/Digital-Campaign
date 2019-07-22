@@ -1,9 +1,9 @@
 /* Set the width of the sidebar to show it */
 function openNav() {
-    document.getElementById("mySidepanel").style.width = "100vw";
+    document.getElementById("sidepanel").style.width = "100vw";
 }
 
 /* Set the width of the sidebar to 0 (hide it) */
 function closeNav() {
-    document.getElementById("mySidepanel").style.width = "0";
+    document.getElementById("sidepanel").style.width = "0";
 }

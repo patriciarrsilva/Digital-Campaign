@@ -28,39 +28,41 @@
         </button>
     </nav>
 
-    <div id="mySidepanel" class="sidepanel">
+    <!-- SIDEPANEL -->
+    <div id="sidepanel" class="sidepanel">
         <div class="account">
             <div class="account__container">
-                <button class="closebtn" onclick="closeNav()">×</button>
+                <button class="close-button" onclick="closeNav()">
+                    <img class="close-button__img" src="../img/close.png" alt="close button">
+                </button>
 
                 <div class="profile-id">
-                    <img class="profile-id__photo" src="../img/xmark.png" alt="profile image">
+                    <img class="profile-id__photo" src="../img/user.png" alt="profile image">
                     <p class="profile-id__name">Larocas</p>
                 </div>
 
                 <ul class="profile-info">
-                    <li><a>Perfil</a></li>
-                    <li><a>Os meus desfios</a></li>
+                    <li class="profile-info__link"><a>Perfil</a></li>
+                    <li class="profile-info__link"><a>Os meus desfios</a></li>
                 </ul>
 
                 <button class="logout-button">Sair da conta</button>
             </div>
-
         </div>
 
         <div class="side-nav">
             <ul class="app-nav">
-                <li><a>Amizade</a></li>
-                <li class="app-nav__mid-link"><a>Tradição</a></li>
-                <li><a>Academia</a></li>
+                <li><a href="amizade.html">Amizade</a></li>
+                <li class="app-nav__mid-link"><a href="#">Tradição</a></li>
+                <li><a href=#>Academia</a></li>
             </ul>
 
-            <div>
-                <h2 class="nav-beirao">Família Beirão</h2>
+            <div class="nav-beirao">
+                <h2 class="nav-beirao__title">Família Beirão</h2>
 
-                <ul>
-                    <li><a>Website</a></li>
-                    <li><a>ClubeBeirão</a></li>
+                <ul class="nav-beirao__links">
+                    <li class="nav-beirao__link"><a href="https://www.licorbeirao.com">Website</a></li>
+                    <li class="nav-beirao__link"><a href="https://www.beirao.club">Clube Beirão</a></li>
                 </ul>
 
                 <ul>
@@ -72,10 +74,9 @@
                 </ul>
             </div>
 
-            <p><a>Termos e Condições</a> | <a>Regulamentos</a></p>
+            <footer class="sidepanel__footer"><a href="#">Termos e Condições</a> | <a href="#">Regulamentos</a></footer>
         </div>
     </div>
-
 
     <h1 class="amizade-title">Amizade</h1>
 

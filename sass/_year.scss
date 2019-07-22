@@ -34,3 +34,13 @@
 .verify-button {
   margin: 73px auto 81px;
 }
+
+.warning {
+  background: $red;
+  color: $white;
+  font-size: 30px;
+  margin: 73px 25px 81px;
+  padding: 20px;
+  text-transform: uppercase;
+  display: none;
+}

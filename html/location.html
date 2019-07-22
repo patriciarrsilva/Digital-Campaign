@@ -23,10 +23,61 @@
         <a href="./home.html" class="home-link">
             <img class="home-logo" src="../img/home-logo2.png" alt="tindeirão logo">
         </a>
-        <button class="nav-button menu-button">
+        <button class="nav-button menu-button openbtn" onclick="openNav()">
             <img class="nav-icon" src="../img/menu2.png" alt="hamburger icon">
         </button>
     </nav>
+
+
+    <!-- SIDEPANEL -->
+    <div id="sidepanel" class="sidepanel">
+        <div class="account">
+            <div class="account__container">
+                <button class="close-button" onclick="closeNav()">
+                    <img class="close-img" src="../img/close.png" alt="close button">
+                </button>
+
+                <div class="profile-id">
+                    <img class="profile-id__photo" src="../img/user.png" alt="profile image">
+                    <p class="profile-id__name">Larocas</p>
+                </div>
+
+                <ul class="profile-info">
+                    <li class="profile-info__link"><a>Perfil</a></li>
+                    <li class="profile-info__link"><a>Os meus desfios</a></li>
+                </ul>
+
+                <button class="logout-button">Sair da conta</button>
+            </div>
+        </div>
+
+        <div class="side-nav">
+            <ul class="app-nav">
+                <li><a href="amizade.html">Amizade</a></li>
+                <li class="app-nav__mid-link"><a href="#">Tradição</a></li>
+                <li><a href=#>Academia</a></li>
+            </ul>
+
+            <div class="nav-beirao">
+                <h2 class="nav-beirao__title">Família Beirão</h2>
+
+                <ul class="nav-beirao__links">
+                    <li class="nav-beirao__link"><a href="https://www.licorbeirao.com">Website</a></li>
+                    <li class="nav-beirao__link"><a href="https://www.beirao.club">Clube Beirão</a></li>
+                </ul>
+
+                <ul>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+            </div>
+
+            <footer class="sidepanel__footer"><a href="#">Termos e Condições</a> | <a href="#">Regulamentos</a></footer>
+        </div>
+    </div>
 
     <main class="location-main">
         <div class="container">
@@ -41,6 +92,7 @@
         </div>
     </main>
 
+    <script src="../js/sidepanel.js"></script>
     <script src="../js/location.js"></script>
 </body>
 

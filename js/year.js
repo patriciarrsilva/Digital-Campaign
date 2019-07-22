@@ -25,6 +25,9 @@ verifyBtn.addEventListener("click", function (e) {
 
     if (age >= 18 && age <= oldestAge) {
         window.location.href = "./html/location.html";
+    } else {
+        document.getElementById("warning").style.display = "block";
+        document.getElementById("verify-button").style.display = "none";
     }
 
     // in the real app, save the year to the backend

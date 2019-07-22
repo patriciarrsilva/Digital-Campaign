@@ -11,6 +11,11 @@ body {
 a {
   text-decoration: none;
   color: $black;
+  cursor: pointer;
+}
+
+button {
+  cursor: pointer;
 }
 
 ul {

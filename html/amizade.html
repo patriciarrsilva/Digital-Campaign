@@ -30,47 +30,50 @@
 
     <div id="mySidepanel" class="sidepanel">
         <div class="account">
-            <button class="closebtn" onclick="closeNav()">×</button>
+            <div class="account__container">
+                <button class="closebtn" onclick="closeNav()">×</button>
 
-            <div class="profile-id">
-                <img src="../img/xmark.png" alt="profile image">
-                <p>Larocas</p>
+                <div class="profile-id">
+                    <img class="profile-id__photo" src="../img/xmark.png" alt="profile image">
+                    <p class="profile-id__name">Larocas</p>
+                </div>
+
+                <ul class="profile-info">
+                    <li><a>Perfil</a></li>
+                    <li><a>Os meus desfios</a></li>
+                </ul>
+
+                <button class="logout-button">Sair da conta</button>
             </div>
 
-            <ul>
-                <li><a>Perfil</a></li>
-                <li><a>Os meus desfios</a></li>
-            </ul>
-
-            <button>Sair da conta</button>
         </div>
 
-        <div>
-            <ul>
+        <div class="side-nav">
+            <ul class="app-nav">
                 <li><a>Amizade</a></li>
-                <li><a>Tradição</a></li>
-                <li><a>Acedemia</a></li>
+                <li class="app-nav__mid-link"><a>Tradição</a></li>
+                <li><a>Academia</a></li>
             </ul>
+
+            <div>
+                <h2 class="nav-beirao">Família Beirão</h2>
+
+                <ul>
+                    <li><a>Website</a></li>
+                    <li><a>ClubeBeirão</a></li>
+                </ul>
+
+                <ul>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                    <li><a></a></li>
+                </ul>
+            </div>
+
+            <p><a>Termos e Condições</a> | <a>Regulamentos</a></p>
         </div>
-
-        <div>
-            <h2>Família Beirão</h2>
-
-            <ul>
-                <li><a>Website</a></li>
-                <li><a>ClubeBeirão</a></li>
-            </ul>
-
-            <ul>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-                <li><a></a></li>
-            </ul>
-        </div>
-
-        <p><a>Termos e Condições</a> | <a>Regulamentos</a></p>
     </div>
 
 

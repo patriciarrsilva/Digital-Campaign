@@ -1440,10 +1440,17 @@ ul {
   /* Disable horizontal scroll */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidepanel */
+  text-align: left;
 }
 
 .account {
   background: #fff;
+  border-bottom: 9px solid #dd052b;
+  position: relative;
+}
+
+.account__container {
+  padding: 0 25px;
 }
 
 /* Position and style the close button (top right corner) */
@@ -1451,9 +1458,61 @@ ul {
   background: transparent;
   border: none;
   font-size: 36px;
-  padding-right: 20px;
+  padding: 0;
   text-align: right;
   width: 100%;
+}
+
+.profile-id {
+  display: flex;
+  align-items: center;
+}
+
+.profile-id__photo {
+  margin: 0 8px 0 0;
+  max-height: 52.75px;
+  max-width: 52.75px;
+}
+
+.profile-id__name {
+  font-size: 30px;
+  margin: 0;
+}
+
+.profile-info {
+  font-size: 22px;
+  margin: 23.93px 0 0 0;
+  padding-bottom: 5px;
+}
+
+.logout-button {
+  background: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 0;
+  position: absolute;
+  bottom: 8px;
+  right: 29px;
+}
+
+.side-nav {
+  padding: 0 25px;
+}
+
+.app-nav {
+  border-bottom: 1px solid #dd052b;
+  font-size: 30px;
+  padding: 26px 0 34.42px;
+  text-transform: uppercase;
+}
+
+.app-nav__mid-link {
+  padding: 26px 0;
+}
+
+.nav-beirao {
+  font-size: 30px;
+  text-transform: uppercase;
 }
 
 .location-main {
@@ -1495,8 +1554,9 @@ ul {
   background: #fff;
   border-radius: 6px;
   box-shadow: 0 12px 0 #c2c2c2;
-  height: 96px;
+  flex: 1 1 87.62px;
   margin: 20px;
+  padding: 10px;
 }
 
 .bottom-button:active {
@@ -1579,6 +1639,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin: 0 19px;
 }
 
 .amizade-button {

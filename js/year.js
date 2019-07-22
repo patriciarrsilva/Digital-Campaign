@@ -28,6 +28,10 @@ verifyBtn.addEventListener("click", function (e) {
     } else {
         document.getElementById("warning").style.display = "block";
         document.getElementById("verify-button").style.display = "none";
+
+        const numberInput = Array.from(document.getElementsByClassName("number-input"));
+
+        //TODO: change color
     }
 
     // in the real app, save the year to the backend

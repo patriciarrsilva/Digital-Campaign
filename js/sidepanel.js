@@ -1,4 +1,4 @@
-const sidepanel = document.getElementById("sidepanel");
+const sidepanel = document.getElementById('sidepanel');
 
 /* Set the width of the sidebar to show it */
 function openNav() {

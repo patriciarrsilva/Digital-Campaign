@@ -14,7 +14,7 @@ function geo_success(position) {
 
     console.log(coordinates);
 
-    window.location.href = "./home.html";
+    window.location.href = './home.html';
 
     // in the real app, save the coordinates to the backend
     return coordinates;

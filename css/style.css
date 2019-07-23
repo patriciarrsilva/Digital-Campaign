@@ -1467,7 +1467,7 @@ input[type="number"]::-webkit-outer-spin-button {
   .top-nav-desk {
     display: flex;
     justify-content: space-between;
-    padding: 37px 5% 37px;
+    padding: 35px 5% 35px;
     background: #dd052b;
   }
   .home-link-desk {

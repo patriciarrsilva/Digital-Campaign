@@ -1,7 +1,7 @@
 /* AUTOTAB ON BIRTH YEAR */
 
 function autotab(current, to) {
-    if (current.getAttribute && (current.value.length == current.getAttribute('maxlength'))) {
+    if (current.getAttribute && (current.value.length === 1)) {
         to.focus();
     }
 }

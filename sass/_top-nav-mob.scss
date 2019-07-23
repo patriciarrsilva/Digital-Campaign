@@ -1,4 +1,4 @@
-.top-nav {
+.top-nav-mob {
   background: $red;
   height: 70px;
   width: 100vw;
@@ -38,4 +38,10 @@
 
 .location-icon {
   height: 130px;
+}
+
+@media (min-width: 1200px) {
+  .top-nav-mob {
+    display: none;
+  }
 }

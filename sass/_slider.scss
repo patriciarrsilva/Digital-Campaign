@@ -46,13 +46,13 @@ body {
   }
 
   &picture {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100%;
   }
 
   &link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 75%;
     height: 100%;
   }
@@ -63,8 +63,12 @@ body {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .swiper- {
+    &nav {
+      height: calc(100vh - 142px - 19px - 143px);
+    }
+
     &link {
       width: 90%;
     }

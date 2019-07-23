@@ -1,4 +1,9 @@
 .bottom- {
+  &nav {
+    margin: 0 auto;
+    max-width: 992px;
+  }
+
   &list {
     display: flex;
     justify-content: space-evenly;

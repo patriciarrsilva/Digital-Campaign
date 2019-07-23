@@ -114,6 +114,12 @@
   &__link {
     margin: 9px 0;
   }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    margin: 25.75px 0 27.09px;
+  }
 }
 
 @media (min-width: 500px) {

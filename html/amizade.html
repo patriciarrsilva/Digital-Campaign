@@ -15,8 +15,8 @@
 <body>
     <!-- FOURTH SCREEN: AMIZADE -->
 
-    <!-- TOP NAVIGATION MENU -->
-    <nav class="top-nav">
+    <!-- TOP NAVIGATION MENU MOBILE -->
+    <nav class="top-nav-mob">
         <button class="nav-button qr-button">
             <img class="nav-icon" src="../img/qr2.png" alt="qr icon">
         </button>
@@ -28,7 +28,28 @@
         </button>
     </nav>
 
-    <!-- SIDEPANEL -->
+    <!-- TOP NAVIGATION MENU DESKTOP -->
+    <nav class="top-nav-desk">
+        <a href="./home.html" class="home-link-desk">
+            <img class="" src="../img/home-logo2.png" alt="tindeirão logo">
+        </a>
+
+        <ul class="app-nav-desk">
+            <li><a class="app-nav-desk__link" href="amizade.html">Amizade</a></li>
+            <li><a class="app-nav-desk__link" href="#">Tradição</a></li>
+            <li><a class="app-nav-desk__link" href=#>Academia</a></li>
+        </ul>
+
+        <div class="top-nav-desk__right">
+            <a><img class="profile-id__photo-desk" src="../img/user.png" alt="profile image"></a>
+
+            <button class="nav-button-desk">
+                <img class="nav-icon-desk" src="../img/qr2.png" alt="qr icon">
+            </button>
+        </div>
+    </nav>
+
+    <!-- SIDEPANEL MOBILE ONLY -->
     <div id="sidepanel" class="sidepanel">
         <div class="account">
             <div class="account__container">
@@ -43,7 +64,7 @@
 
                 <ul class="profile-info">
                     <li class="profile-info__link"><a>Perfil</a></li>
-                    <li class="profile-info__link"><a>Os meus desfios</a></li>
+                    <li class="profile-info__link"><a>Os meus desafios</a></li>
                 </ul>
 
                 <button class="logout-button">Sair da conta</button>
@@ -61,16 +82,41 @@
                 <h2 class="nav-beirao__title">Família Beirão</h2>
 
                 <ul class="nav-beirao__links">
-                    <li class="nav-beirao__link"><a href="https://www.licorbeirao.com">Website</a></li>
-                    <li class="nav-beirao__link"><a href="https://www.beirao.club">Clube Beirão</a></li>
+                    <li class="nav-beirao__link">
+                        <a href="https://www.licorbeirao.com" target="_blank" rel="noopener">Website</a>
+                    </li>
+                    <li class="nav-beirao__link">
+                        <a href="https://www.beirao.club" target="_blank" rel="noopener">Clube Beirão</a>
+                    </li>
                 </ul>
 
-                <ul>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
-                    <li><a></a></li>
+                <ul class="nav-beirao__social">
+                    <li>
+                        <a href="https://www.facebook.com/olicordeportugal/" target="_blank" rel="noopener">
+                            <img src="../img/fb.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/licor_beirao/" target="_blank" rel="noopener">
+                            <img src="../img/insta.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCG-vFsSqHOKled6qHvTAfcA" target="_blank"
+                            rel="noopener">
+                            <img src="../img/youtube.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://twitter.com/licor_beirao" target="_blank" rel="noopener">
+                            <img src="../img/twitter.png">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.pinterest.pt/licorbeirao/" target="_blank" rel="noopener">
+                            <img src="../img/pinterest.png">
+                        </a>
+                    </li>
                 </ul>
             </div>
 
@@ -80,35 +126,105 @@
 
     <h1 class="amizade-title">Amizade</h1>
 
-    <div class="amizade-container">
+    <main class="amizade-container">
         <a href="#" class="amizade-button">
-            <div>
-                <img src="../img/match2.png" alt="people singing and playing music">
+            <div class="img-container">
+                <img class="amizade-img" src="../img/match2.png" alt="people singing and playing music">
             </div>
             <p class="amizade-button__description">Match</p>
         </a>
 
         <a href="#" class="amizade-button">
-            <div>
-                <img src="../img/dois2.png" alt="2 bottles of licor beirão">
+            <div class="img-container">
+                <img class="amizade-img" src="../img/serenata2.png" alt="guitar">
             </div>
-            <p class="amizade-button__description">Dois por um</p>
+            <p class="amizade-button__description">Serenata</p>
         </a>
 
         <a href="#" class="amizade-button">
-            <div>
-                <img src="../img/que2.png" alt="2 bottles of licor beirão with different sizes">
+            <div class="img-container">
+                <img class="amizade-img" src="../img/glass.png" alt="cocktail glass">
             </div>
             <p class="amizade-button__description">Que beirão és tu?</p>
         </a href="#" class="amizade-button">
 
         <a href="#" class="amizade-button">
-            <div>
-                <img src="../img/serenata2.png" alt="guitar">
+            <div class="img-container">
+                <img class="amizade-img" src="../img/person.png" alt="person shouting">
+            </div>
+            <p class="amizade-button__description">Rally Beirão</p>
+        </a>
+
+        <a href="#" class="amizade-button">
+            <div class="img-container">
+                <img class="amizade-img" src="../img/match2.png" alt="people singing and playing music">
+            </div>
+            <p class="amizade-button__description">Match</p>
+        </a>
+
+        <a href="#" class="amizade-button">
+            <div class="img-container">
+                <img class="amizade-img" src="../img/serenata2.png" alt="guitar">
             </div>
             <p class="amizade-button__description">Serenata</p>
         </a>
-    </div>
+
+        <a href="#" class="amizade-button">
+            <div class="img-container">
+                <img class="amizade-img" src="../img/glass.png" alt="cocktail glass">
+            </div>
+            <p class="amizade-button__description">Que beirão és tu?</p>
+        </a href="#" class="amizade-button">
+
+        <a href="#" class="amizade-button">
+            <div class="img-container">
+                <img class="amizade-img" src="../img/person.png" alt="person shouting">
+            </div>
+            <p class="amizade-button__description">Rally Beirão</p>
+        </a> </main>
+
+    <!-- FOOTER DESKTOP ONLY -->
+    <footer class="footer">
+        <div class="footer__left">
+            <p class="footer__text-red">Sê responsável. Beirão é com moderação.</p>
+            <p class="footer__text-link"><a href="#">Termos e Condições</a> | <a href="#">Regulamentos</a></p>
+        </div>
+
+        <ul class="footer__links">
+            <li class="footer__link"><a href="https://www.licorbeirao.com" target="_blank" rel="noopener">Website</a>
+            </li>
+            <li class="footer__link"><a href="https://www.beirao.club" target="_blank" rel="noopener">Clube Beirão</a>
+            </li>
+        </ul>
+
+        <ul class="footer__social">
+            <li>
+                <a href="https://www.facebook.com/olicordeportugal/" target="_blank" rel="noopener">
+                    <img src="../img/fb.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/licor_beirao/" target="_blank" rel="noopener">
+                    <img src="../img/insta.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCG-vFsSqHOKled6qHvTAfcA" target="_blank" rel="noopener">
+                    <img src="../img/youtube.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://twitter.com/licor_beirao" target="_blank" rel="noopener">
+                    <img src="../img/twitter.png">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.pinterest.pt/licorbeirao/" target="_blank" rel="noopener">
+                    <img src="../img/pinterest.png">
+                </a>
+            </li>
+        </ul>
+    </footer>
 
     <script src="../js/sidepanel.js"></script>
 </body>

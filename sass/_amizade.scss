@@ -10,7 +10,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 0 19px;
+    padding: 0 19px;
   }
 
   &button {
@@ -20,14 +20,54 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 212px;
     padding: 10px;
     margin: 0 5px 34px;
-    flex: 1 1 150px;
+    flex: 1 1 47%;
 
     &__description {
       font-size: 24px;
       margin: 0;
       text-transform: uppercase;
     }
+  }
+}
+
+.img-container {
+  height: 140px;
+}
+
+.amizade-img {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .amizade- {
+    &button {
+      flex: 1 1 32%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .amizade- {
+    &title {
+      font-size: 82px;
+      margin: 104px auto 85px;
+    }
+
+    &container {
+      padding: 0 5%;
+    }
+
+    &button {
+      flex: 1 1 22%;
+      height: 275px;
+      margin: 0 13px 86.41px;
+    }
+  }
+
+  .img-container {
+    height: 200px;
   }
 }

@@ -1,5 +1,5 @@
 @import "normalize";
-@import url('https://fonts.googleapis.com/css?family=Caveat+Brush|Oswald&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Caveat+Brush|Oswald&display=swap");
 @import "fonts";
 @import "variables";
 @import "swiper";
@@ -7,9 +7,11 @@
 @import "grid";
 @import "global";
 @import "year";
-@import "top-nav";
+@import "top-nav-mob";
+@import "top-nav-desk";
 @import "sidepanel";
 @import "location";
 @import "bottom-nav";
 @import "slider";
 @import "amizade";
+@import "footer";

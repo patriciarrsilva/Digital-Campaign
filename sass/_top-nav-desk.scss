@@ -1,0 +1,51 @@
+.top-nav-desk {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .top-nav-desk {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 5% 37px;
+    background: $text-red;
+  }
+
+  .home-link-desk {
+    flex: 1 1;
+    text-align: left;
+  }
+
+  .app-nav-desk {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;
+    font-size: 28px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+
+  .app-nav-desk__link {
+    color: $white;
+  }
+
+  .top-nav-desk__right {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .profile-id__photo-desk {
+    height: 42.33px;
+  }
+
+  .nav-button-desk {
+    background: transparent;
+    border: none;
+    margin-left: 34.53px;
+  }
+
+  .nav-icon-desk {
+    height: 25.3px;
+  }
+}

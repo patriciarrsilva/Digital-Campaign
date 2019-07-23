@@ -344,6 +344,7 @@ template {
 }
 
 /* COLOR */
+/* SIZES */
 /**
  * Swiper 4.5.0
  * Most modern mobile touch slider and framework with hardware accelerated transitions
@@ -522,7 +523,6 @@ template {
   position: absolute;
   top: 50%;
   width: 27px;
-  height: 44px;
   margin-top: -22px;
   z-index: 10;
   cursor: pointer;
@@ -1411,7 +1411,7 @@ input[type="number"]::-webkit-outer-spin-button {
   display: none;
 }
 
-.top-nav {
+.top-nav-mob {
   background: #e54847;
   height: 70px;
   width: 100vw;
@@ -1451,6 +1451,57 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .location-icon {
   height: 130px;
+}
+
+@media (min-width: 1200px) {
+  .top-nav-mob {
+    display: none;
+  }
+}
+
+.top-nav-desk {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .top-nav-desk {
+    display: flex;
+    justify-content: space-between;
+    padding: 37px 5% 37px;
+    background: #dd052b;
+  }
+  .home-link-desk {
+    flex: 1 1;
+    text-align: left;
+  }
+  .app-nav-desk {
+    display: flex;
+    flex: 1 1;
+    justify-content: space-evenly;
+    font-size: 28px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .app-nav-desk__link {
+    color: #fff;
+  }
+  .top-nav-desk__right {
+    flex: 1 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .profile-id__photo-desk {
+    height: 42.33px;
+  }
+  .nav-button-desk {
+    background: transparent;
+    border: none;
+    margin-left: 34.53px;
+  }
+  .nav-icon-desk {
+    height: 25.3px;
+  }
 }
 
 .sidepanel {
@@ -1569,6 +1620,12 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 9px 0;
 }
 
+.nav-beirao__social {
+  display: flex;
+  justify-content: space-between;
+  margin: 25.75px 0 27.09px;
+}
+
 @media (min-width: 500px) {
   .open {
     width: 500px;
@@ -1603,6 +1660,11 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #e54847;
   font-size: 18px;
   text-transform: uppercase;
+}
+
+.bottom-nav {
+  margin: 0 auto;
+  max-width: 992px;
 }
 
 .bottom-list {
@@ -1680,13 +1742,13 @@ body {
 }
 
 .swiper-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
 }
 
 .swiper-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 75%;
   height: 100%;
 }
@@ -1696,7 +1758,10 @@ body {
   max-height: 100%;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
+  .swiper-nav {
+    height: calc(100vh - 142px - 19px - 143px);
+  }
   .swiper-link {
     width: 90%;
   }
@@ -1713,7 +1778,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 19px;
+  padding: 0 19px;
 }
 
 .amizade-button {
@@ -1723,15 +1788,84 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  height: 212px;
   padding: 10px;
   margin: 0 5px 34px;
-  flex: 1 1 150px;
+  flex: 1 1 47%;
 }
 
 .amizade-button__description {
   font-size: 24px;
   margin: 0;
   text-transform: uppercase;
+}
+
+.img-container {
+  height: 140px;
+}
+
+.amizade-img {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .amizade-button {
+    flex: 1 1 32%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .amizade-title {
+    font-size: 82px;
+    margin: 104px auto 85px;
+  }
+  .amizade-container {
+    padding: 0 5%;
+  }
+  .amizade-button {
+    flex: 1 1 22%;
+    height: 275px;
+    margin: 0 13px 86.41px;
+  }
+  .img-container {
+    height: 200px;
+  }
+}
+
+.footer {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 39px 5% 39px;
+  }
+  .footer__left {
+    text-align: left;
+  }
+  .footer__text-red {
+    color: #dd052b;
+    font-size: 24px;
+    margin: 0 0 19px;
+  }
+  .footer__text-link {
+    font-size: 14px;
+    margin: 0;
+  }
+  .footer__links {
+    flex: 1 1;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+  }
+  .footer__social {
+    flex: 1 1;
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,40 @@
+.footer {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .footer {
+    background: $white;
+    display: flex;
+    justify-content: space-between;
+    padding: 39px 5% 39px;
+  }
+
+  .footer__left {
+    text-align: left;
+  }
+
+  .footer__text-red {
+    color: $text-red;
+    font-size: 24px;
+    margin: 0 0 19px;
+  }
+
+  .footer__text-link {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  .footer__links {
+    flex: 1 1;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 24px;
+  }
+
+  .footer__social {
+    flex: 1 1;
+    display: flex;
+    justify-content: space-between;
+  }
+}

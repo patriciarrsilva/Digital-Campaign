@@ -6,7 +6,17 @@ function autotab(current, to) {
     }
 }
 
+/* VERIFY MINIMUM AGE */
 const verifyBtn = document.getElementById("verify-button");
+const warning = document.getElementById("warning");
+
+function toggleInputNumbers() {
+    const numberInput = Array.from(document.getElementsByClassName("number-input"));
+
+    numberInput.forEach(function (el) {
+        el.classList.toggle('number-input--warning');
+    });
+}
 
 verifyBtn.addEventListener("click", function (e) {
     e.preventDefault();
@@ -26,14 +36,21 @@ verifyBtn.addEventListener("click", function (e) {
     if (age >= 18 && age <= oldestAge) {
         window.location.href = "./html/location.html";
     } else {
-        document.getElementById("warning").style.display = "block";
-        document.getElementById("verify-button").style.display = "none";
-
-        const numberInput = Array.from(document.getElementsByClassName("number-input"));
-
-        //TODO: change color
+        verifyBtn.classList.toggle('invisible');
+        warning.classList.toggle('invisible');
+        toggleInputNumbers();
     }
 
     // in the real app, save the year to the backend
     return year;
 });
+
+/* SHOW VERIFY BUTTON AGAIN */
+
+function revert() {
+    if (!warning.classList.contains('invisible')) {
+        verifyBtn.classList.toggle('invisible');
+        warning.classList.toggle('invisible');
+        toggleInputNumbers();
+    }
+}

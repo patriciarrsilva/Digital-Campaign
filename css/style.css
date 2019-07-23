@@ -1333,6 +1333,12 @@ ul {
   padding: 0;
 }
 
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 .container {
   margin: 0 auto;
 }
@@ -1379,6 +1385,13 @@ ul {
   width: 50px;
   margin: 0 9px;
   padding: 0;
+  text-align: center;
+}
+
+.number-input--warning {
+  background: #e54847;
+  border: 1px solid #e54847;
+  color: #fff;
 }
 
 .verify-button {
@@ -1392,6 +1405,9 @@ ul {
   margin: 73px 25px 81px;
   padding: 20px;
   text-transform: uppercase;
+}
+
+.invisible {
   display: none;
 }
 
@@ -1456,7 +1472,7 @@ ul {
   text-align: center;
 }
 
-.sidepanel-open {
+.open {
   width: 100vw;
 }
 
@@ -1554,7 +1570,7 @@ ul {
 }
 
 @media (min-width: 500px) {
-  .sidepanel-open {
+  .open {
     width: 500px;
   }
 }
@@ -1663,6 +1679,10 @@ body {
   margin-top: 19px;
 }
 
+.swiper-picture {
+  height: 100%;
+}
+
 .swiper-link {
   display: flex;
   align-items: center;
@@ -1674,6 +1694,12 @@ body {
 .swiper-image {
   max-width: 100%;
   max-height: 100%;
+}
+
+@media (min-width: 1024px) {
+  .swiper-link {
+    width: 90%;
+  }
 }
 
 .amizade-title {

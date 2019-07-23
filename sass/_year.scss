@@ -29,6 +29,13 @@
   width: 50px;
   margin: 0 9px;
   padding: 0;
+  text-align: center;
+
+  &--warning {
+    background: $red;
+    border: 1px solid $red;
+    color: $white;
+  }
 }
 
 .verify-button {
@@ -42,5 +49,8 @@
   margin: 73px 25px 81px;
   padding: 20px;
   text-transform: uppercase;
+}
+
+.invisible {
   display: none;
 }

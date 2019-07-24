@@ -1339,31 +1339,27 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.container {
-  margin: 0 auto;
-}
-
-.button {
-  background: #e54847;
-  border: 1px solid #e54847;
-  border-radius: 6px;
-  box-shadow: 0 6px 0 #c14444;
-  color: white;
-  display: block;
-  font-size: 24px;
-  height: 52px;
-  padding: 12px 25px;
-  text-transform: uppercase;
+.year- {
+  /* &main {
+    display: flex;
+    flex-direction: column;
+  } */
 }
 
 .year-body {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   height: 100vh;
+}
+
+.year-header {
+  display: none;
 }
 
 .year-title {
   font-size: 24px;
+  margin: 0;
   margin: 0 0 29px;
   text-transform: uppercase;
 }
@@ -1374,7 +1370,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .year-text {
-  margin: 5px;
+  margin: 0;
 }
 
 .number-input {
@@ -1389,26 +1385,65 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .number-input--warning {
-  background: #e54847;
-  border: 1px solid #e54847;
+  background: #dd052b;
+  border: 1px solid #dd052b;
   color: #fff;
 }
 
 .verify-button {
-  margin: 73px auto 81px;
+  background: #e54847;
+  border: 1px solid #e54847;
+  border-radius: 6px;
+  box-shadow: 0 7px 0 #c14444;
+  color: white;
+  font-size: 24px;
+  height: 45px;
+  width: 143px;
+  margin: 0;
+  margin: 73px 0 0;
+  text-transform: uppercase;
 }
 
 .warning {
-  background: #e54847;
+  background: #dd052b;
   color: #fff;
   font-size: 30px;
-  margin: 73px 25px 81px;
+  margin: 0 auto;
   padding: 20px;
+  max-width: 95%;
   text-transform: uppercase;
 }
 
 .invisible {
   display: none;
+}
+
+@media (min-width: 1200px) {
+  .year-body {
+    justify-content: space-evenly;
+  }
+  .year-header {
+    display: block;
+    height: 78.87px;
+  }
+  .year-header__img {
+    height: 100%;
+  }
+  .year-title {
+    font-size: 56px;
+  }
+  .year-footer {
+    font-size: 24px;
+  }
+  .number-input {
+    margin: 0 12px;
+  }
+  .verify-button {
+    box-shadow: 0 12.33px 0 #c14444;
+    font-size: 36px;
+    height: 79.29px;
+    width: 230px;
+  }
 }
 
 .top-nav-mob {

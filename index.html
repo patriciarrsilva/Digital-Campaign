@@ -17,35 +17,35 @@
     <!-- <button disabled class="js-push-btn">Enable Push Messaging</button><br><br> -->
 
     <!-- FIRST SCREEN: BIRTH YEAR -->
-    <div class="container">
-        <header class="year-header">
-            <h1 class="year-title">Em que ano nasceste?</h1>
-        </header>
+    <header class="year-header">
+        <img src="img/home-logo-desk-red.png" alt="tindeirão logo" class="year-header__img">
+    </header>
 
-        <main>
-            <!--<form action="/year" method="post">-->
-            <form name="year" class="year-form">
-                <div onclick="revert()">
-                    <input type="number" min="1" max="9" step="1" name="first" id="one" class="number-input"
-                        oninput="autotab(this, document.year.second)" required autofocus>
-                    <input type="number" min="1" max="9" step="1" name="second" id="two" class="number-input"
-                        oninput="autotab(this, document.year.third)" required>
-                    <input type="number" min="1" max="9" step="1" name="third" id="three" class="number-input"
-                        oninput="autotab(this, document.year.fourth)" required>
-                    <input type="number" min="1" max="9" step="1" name="fourth" id="four" class="number-input" required>
-                </div>
+    <main class="year-main">
+        <h1 class="year-title">Em que ano nasceste?</h1>
 
-                <button type="submit" id="verify-button" class="button verify-button">'Bora!</button>
-            </form>
-        </main>
+        <!--<form action="/year" method="post">-->
+        <form name="year">
+            <div onclick="revert()">
+                <input type="number" min="1" max="9" step="1" name="first" id="one" class="number-input"
+                    oninput="autotab(this, document.year.second)" required autofocus>
+                <input type="number" min="1" max="9" step="1" name="second" id="two" class="number-input"
+                    oninput="autotab(this, document.year.third)" required>
+                <input type="number" min="1" max="9" step="1" name="third" id="three" class="number-input"
+                    oninput="autotab(this, document.year.fourth)" required>
+                <input type="number" min="1" max="9" step="1" name="fourth" id="four" class="number-input" required>
+            </div>
 
-        <p id="warning" class="warning invisible">Sem idade mínima para entrar no site</p>
+            <button type="submit" id="verify-button" class="verify-button">'Bora!</button>
+        </form>
+    </main>
 
-        <footer class="year-footer">
-            <p class="year-text">Sê responsável.</p>
-            <p class="year-text">Beirão é com moderação.</p>
-        </footer>
-    </div>
+    <p id="warning" class="warning invisible">Sem idade mínima para entrar no site</p>
+
+    <footer class="year-footer">
+        <p class="year-text">Sê responsável.</p>
+        <p class="year-text">Beirão é com moderação.</p>
+    </footer>
 
     <script src="./js/sw-register.js"></script>
     <script src="./js/year.js"></script>

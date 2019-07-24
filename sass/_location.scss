@@ -43,3 +43,9 @@
   font-size: 18px;
   text-transform: uppercase;
 }
+
+@media (min-width: 1200px) {
+  .location-main {
+      height: calc(100vh - 142px);
+    }
+}

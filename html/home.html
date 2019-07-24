@@ -17,35 +17,37 @@
 
     <!-- TOP NAVIGATION MENU MOBILE -->
     <nav class="top-nav-mob">
-        <a href="#" class="nav-button qr-button">
-            <img src="../img/qr2.png" alt="qr icon" class="nav-icon">
+        <a href="#" class="top-nav-mob__button">
+            <img src="../img/qr2.png" alt="qr icon">
         </a>
 
-        <a href="./home.html" class="home-link">
-            <img src="../img/home-logo2.png" alt="tindeirão logo" class="home-logo">
+        <a href="./home.html">
+            <img src="../img/home-logo2.png" alt="tindeirão logo">
         </a>
 
-        <button class="nav-button menu-button openbtn" onclick="openNav()">
-            <img src="../img/menu2.png" alt="hamburger icon" class="nav-icon">
+        <button class="top-nav-mob__button" onclick="openNav()">
+            <img src="../img/menu2.png" alt="hamburger icon">
         </button>
     </nav>
 
     <!-- TOP NAVIGATION MENU DESKTOP -->
     <nav class="top-nav-desk">
-        <a href="./home.html" class="home-link-desk">
-            <img src="../img/home-logo-desk.png" alt="tindeirão logo" class="">
-        </a>
+        <div class="top-nav-desk__container">
+            <a href="./home.html" class="top-nav-desk__left">
+                <img src="../img/home-logo-desk.png" alt="tindeirão logo">
+            </a>
 
-        <ul class="app-nav-desk">
-            <li><a href="amizade.html" class="app-nav-desk__link">Amizade</a></li>
-            <li><a href="#" class="app-nav-desk__link">Tradição</a></li>
-            <li><a href="#" class="app-nav-desk__link">Academia</a></li>
-        </ul>
+            <ul class="top-nav-desk__mid">
+                <li><a href="amizade.html" class="top-nav-desk__link">Amizade</a></li>
+                <li><a href="#" class="top-nav-desk__link">Tradição</a></li>
+                <li><a href="#" class="top-nav-desk__link">Academia</a></li>
+            </ul>
 
-        <div class="top-nav-desk__right">
-            <a href="#"><img src="../img/user.png" alt="profile image" class="profile-id__photo-desk"></a>
+            <div class="top-nav-desk__right">
+                <a href="#" class="top-nav-desk__user"><img src="../img/user.png" alt="profile image"></a>
 
-            <a href="#" class="nav-button-desk"><img src="../img/qr2.png" alt="qr icon" class="nav-icon-desk"></a>
+                <a href="#"><img src=" ../img/qr2.png" alt="qr icon"></a>
+            </div>
         </div>
     </nav>
 
@@ -187,20 +189,20 @@
     <nav class="bottom-nav">
         <ul class="bottom-list">
             <li class="bottom-button">
-                <a href="./amizade.html">
-                    <img src="../img/amizade.png" alt="two glasses toasting">
+                <a href="./amizade.html" class="bottom-button__link">
+                    <img src="../img/amizade.png" alt="two glasses toasting" class="bottom-button__img">
                     <p class="bottom-button__name">Amizade</p>
                 </a>
             </li>
             <li class="bottom-button">
-                <a href="#">
-                    <img src="../img/tradição.png" alt="guitar">
+                <a href="#" class="bottom-button__link">
+                    <img src="../img/tradição.png" alt="guitar" class="bottom-button__img">
                     <p class="bottom-button__name">Tradição</p>
                 </a>
             </li>
             <li class="bottom-button">
-                <a href="#">
-                    <img src="../img/academia.png" alt="book">
+                <a href="#" class="bottom-button__link">
+                    <img src="../img/academia.png" alt="book" class="bottom-button__img">
                     <p class="bottom-button__name">Academia</p>
                 </a>
             </li>
@@ -209,47 +211,49 @@
 
     <!-- FOOTER DESKTOP ONLY -->
     <footer class="footer">
-        <div class="footer__left">
-            <p class="footer__text-red">Sê responsável. Beirão é com moderação.</p>
-            <p class="footer__text-link"><a href="#">Termos e Condições</a> | <a href="#">Regulamentos</a></p>
+        <div class="footer__container">
+            <div class="footer__left">
+                <p class="footer__text-red">Sê responsável. Beirão é com moderação.</p>
+                <p class="footer__text-link"><a href="#">Termos e Condições</a> | <a href="#">Regulamentos</a></p>
+            </div>
+
+            <ul class="footer__mid">
+                <li>
+                    <a href="https://www.licorbeirao.com" target="_blank" rel="noopener">Website</a>
+                </li>
+                <li>
+                    <a href="https://www.beirao.club" target="_blank" rel="noopener">Clube Beirão</a>
+                </li>
+            </ul>
+
+            <ul class="footer__right">
+                <li>
+                    <a href="https://www.facebook.com/olicordeportugal/" target="_blank" rel="noopener">
+                        <img src="../img/fb.png" alt="facebook icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/licor_beirao/" target="_blank" rel="noopener">
+                        <img src="../img/insta.png" alt="instagram icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/channel/UCG-vFsSqHOKled6qHvTAfcA" target="_blank" rel="noopener">
+                        <img src="../img/youtube.png" alt="youtube icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/licor_beirao" target="_blank" rel="noopener">
+                        <img src="../img/twitter.png" alt="twitter icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.pinterest.pt/licorbeirao/" target="_blank" rel="noopener">
+                        <img src="../img/pinterest.png" alt="pinterest icon">
+                    </a>
+                </li>
+            </ul>
         </div>
-
-        <ul class="footer__links">
-            <li class="footer__link">
-                <a href="https://www.licorbeirao.com" target="_blank" rel="noopener">Website</a>
-            </li>
-            <li class="footer__link">
-                <a href="https://www.beirao.club" target="_blank" rel="noopener">Clube Beirão</a>
-            </li>
-        </ul>
-
-        <ul class="footer__social">
-            <li>
-                <a href="https://www.facebook.com/olicordeportugal/" target="_blank" rel="noopener">
-                    <img src="../img/fb.png" alt="facebook icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/licor_beirao/" target="_blank" rel="noopener">
-                    <img src="../img/insta.png" alt="instagram icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.youtube.com/channel/UCG-vFsSqHOKled6qHvTAfcA" target="_blank" rel="noopener">
-                    <img src="../img/youtube.png" alt="youtube icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://twitter.com/licor_beirao" target="_blank" rel="noopener">
-                    <img src="../img/twitter.png" alt="twitter icon">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.pinterest.pt/licorbeirao/" target="_blank" rel="noopener">
-                    <img src="../img/pinterest.png" alt="pinterest icon">
-                </a>
-            </li>
-        </ul>
     </footer>
 
     <script src="../js/sidepanel.js"></script>

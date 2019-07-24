@@ -1,43 +1,15 @@
 .top-nav-mob {
-  background: $red;
+  background: $text-red;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 70px;
-  //width: 100vw;
-  position: relative;
-}
 
-.home-link {
-  display: inline-block;
-  padding: 20px 0;
-}
-
-.home-logo {
-  height: 26.98px;
-}
-
-.nav-button {
-  background: transparent;
-  border: none;
-  height: 70px;
-  width: 80px;
-  padding: 0;
-  position: absolute;
-  top: 0;
-}
-
-.qr-button {
-  left: 0;
-}
-
-.menu-button {
-  right: 0;
-}
-
-.nav-icon {
-  height: 24.67px;
-}
-
-.location-icon {
-  height: 130px;
+  &__button {
+    background: transparent;
+    border: none;
+    padding: 0;
+  }
 }
 
 @media (min-width: 1200px) {

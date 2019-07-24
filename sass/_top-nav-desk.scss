@@ -4,48 +4,44 @@
 
 @media (min-width: 1200px) {
   .top-nav-desk {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px 5% 35px;
     background: $text-red;
-  }
+    display: block;
+    height: 142px;
 
-  .home-link-desk {
-    flex: 1 1;
-    text-align: left;
-  }
+    &__container{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 142px;
+      margin: 0 auto;
+      max-width: 1200px;
+    }
 
-  .app-nav-desk {
-    display: flex;
-    flex: 1 1;
-    justify-content: space-evenly;
-    font-size: 28px;
-    text-align: left;
-    text-transform: uppercase;
-  }
+    &__left {
+      text-align: left;
+    }
 
-  .app-nav-desk__link {
-    color: $white;
-  }
+    &__mid {
+      flex: 1;
+      display: flex;
+      justify-content: space-evenly;
+      font-size: 28px;
+      text-transform: uppercase;
+    }
 
-  .top-nav-desk__right {
-    flex: 1 1;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-  }
+    &__link {
+      color: $white;
+    }
 
-  .profile-id__photo-desk {
-    height: 42.33px;
-  }
+    &__right {
+      flex: 0.5;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
 
-  .nav-button-desk {
-    background: transparent;
-    border: none;
-    margin-left: 34.53px;
-  }
-
-  .nav-icon-desk {
-    height: 25.3px;
+    &__user {
+      margin-right: 34.53px;
+    }
   }
 }

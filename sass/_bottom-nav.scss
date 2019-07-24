@@ -1,25 +1,28 @@
 .bottom- {
   &nav {
-    margin: 0 auto;
-    max-width: 992px;
+    margin: 25.1px auto 0;
   }
 
   &list {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
   }
 
   &button {
+    flex: 1;
     background: $white;
     border-radius: 6px;
-    box-shadow: 0 12px 0 $grey;
-    flex: 1 1 87.62px;
-    margin: 25px 17px;
-    padding: 10px;
-
+    box-shadow: 0 7px 0 $grey;
+    margin: 0 11.69px;
+    height: 88px;
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    
     &:active {
       background: $red;
-      box-shadow: 0 12px 0 $shadow-red;
+      box-shadow: 0 7px 0 $shadow-red;
 
       & .bottom-button__name {
         color: $white;
@@ -31,6 +34,23 @@
       font-size: 18px;
       margin: 0;
       text-transform: uppercase;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .bottom-button {
+    &__link{
+      display: flex;
+      align-items: center;
+    }
+
+    &__img {
+      min-height: 85.51px;
+    }
+
+    &__name {
+      font-size: 42px;
     }
   }
 }

@@ -1,24 +1,38 @@
 .location- {
   &main {
     display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
     height: calc(100vh - 70px);
   }
 
+  &icon {
+    max-width: 130px;
+  }
+
   &title {
     font-size: 30px;
-    margin: 29px auto 36px;
+    margin: 0;
   }
 
   &description {
     font-size: 22px;
     margin: 0;
-    max-width: 301px;
+    max-width: 95%;
   }
 
   &button {
-    display: block;
-    margin: 24px auto 28px;
+    background: $red;
+    border: 1px solid $red;
+    border-radius: 6px;
+    box-shadow: 0 7px 0 $shadow-red;
+    color: white;
+    font-size: 24px;
+    height: 45px;
+    width: 180.72px;
+    padding: 0;
+    text-transform: uppercase;
   }
 }
 

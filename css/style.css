@@ -1339,17 +1339,10 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: 0;
 }
 
-.year- {
-  /* &main {
-    display: flex;
-    flex-direction: column;
-  } */
-}
-
 .year-body {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 100vh;
 }
 
@@ -1399,8 +1392,8 @@ input[type="number"]::-webkit-outer-spin-button {
   font-size: 24px;
   height: 45px;
   width: 143px;
-  margin: 0;
   margin: 73px 0 0;
+  padding: 0;
   text-transform: uppercase;
 }
 
@@ -1449,7 +1442,6 @@ input[type="number"]::-webkit-outer-spin-button {
 .top-nav-mob {
   background: #e54847;
   height: 70px;
-  width: 100vw;
   position: relative;
 }
 
@@ -1669,24 +1661,38 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .location-main {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
   align-items: center;
   height: calc(100vh - 70px);
 }
 
+.location-icon {
+  max-width: 130px;
+}
+
 .location-title {
   font-size: 30px;
-  margin: 29px auto 36px;
+  margin: 0;
 }
 
 .location-description {
   font-size: 22px;
   margin: 0;
-  max-width: 301px;
+  max-width: 95%;
 }
 
 .location-button {
-  display: block;
-  margin: 24px auto 28px;
+  background: #e54847;
+  border: 1px solid #e54847;
+  border-radius: 6px;
+  box-shadow: 0 7px 0 #c14444;
+  color: white;
+  font-size: 24px;
+  height: 45px;
+  width: 180.72px;
+  padding: 0;
+  text-transform: uppercase;
 }
 
 .negative-button {

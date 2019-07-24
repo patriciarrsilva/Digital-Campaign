@@ -24,18 +24,18 @@
 
         <main>
             <!--<form action="/year" method="post">-->
-            <form class="year-form" name="year">
+            <form name="year" class="year-form">
                 <div onclick="revert()">
-                    <input class="number-input" id="one" name="first" type="number" min="1" max="9" step="1"
+                    <input type="number" min="1" max="9" step="1" name="first" id="one" class="number-input"
                         oninput="autotab(this, document.year.second)" required autofocus>
-                    <input class="number-input" id="two" name="second" type="number" min="1" max="9" step="1" required
-                        oninput="autotab(this, document.year.third)">
-                    <input class="number-input" id="three" name="third" type="number" min="1" max="9" step="1" required
-                        oninput="autotab(this, document.year.fourth)">
-                    <input class="number-input" id="four" name="fourth" type="number" min="1" max="9" step="1" required>
+                    <input type="number" min="1" max="9" step="1" name="second" id="two" class="number-input"
+                        oninput="autotab(this, document.year.third)" required>
+                    <input type="number" min="1" max="9" step="1" name="third" id="three" class="number-input"
+                        oninput="autotab(this, document.year.fourth)" required>
+                    <input type="number" min="1" max="9" step="1" name="fourth" id="four" class="number-input" required>
                 </div>
 
-                <button type="submit" class="button verify-button" id="verify-button">'Bora!</button>
+                <button type="submit" id="verify-button" class="button verify-button">'Bora!</button>
             </form>
         </main>
 

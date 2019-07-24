@@ -9,12 +9,11 @@ function autotab(current, to) {
 /* VERIFY MINIMUM AGE */
 const verifyBtn = document.getElementById('verify-button');
 const warning = document.getElementById('warning');
+const numberInput = Array.from(document.getElementsByClassName('number-input'));
 
 function toggleInputNumbers() {
-    const numberInput = Array.from(document.getElementsByClassName('number-input'));
-
     numberInput.forEach(function (el) {
-        el.classList.toggle('number-input--warning');
+        el.classList.toggle('invalid');
     });
 }
 
@@ -52,5 +51,9 @@ function revert() {
         verifyBtn.classList.toggle('invisible');
         warning.classList.toggle('invisible');
         toggleInputNumbers();
+
+        numberInput.forEach(function (el) {
+            el.value = "";
+        });
     }
 }

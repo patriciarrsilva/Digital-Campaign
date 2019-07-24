@@ -1384,7 +1384,7 @@ input[type="number"]::-webkit-outer-spin-button {
   text-align: center;
 }
 
-.number-input--warning {
+.invalid {
   background: #dd052b;
   border: 1px solid #dd052b;
   color: #fff;

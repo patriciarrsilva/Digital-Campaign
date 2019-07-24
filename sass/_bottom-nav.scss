@@ -13,12 +13,12 @@
     background: $white;
     border-radius: 6px;
     box-shadow: 0 7px 0 $grey;
-    margin: 0 11.69px;
-    height: 88px;
     display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 88px;
+    margin: 0 11.69px;
     
     &:active {
       background: $red;
@@ -39,18 +39,34 @@
 }
 
 @media (min-width: 1200px) {
-  .bottom-button {
-    &__link{
-      display: flex;
-      align-items: center;
+  .bottom-{
+    &list {
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: 1000px;
     }
 
-    &__img {
-      min-height: 85.51px;
-    }
+    &button {
+      box-shadow: 0 12.33px 0 $grey;
+      height: 121.6px;
+      margin: 0 13px;
 
-    &__name {
-      font-size: 42px;
+      &:active {
+        box-shadow: 0 12.33px 0 $shadow-red;
+      }
+
+      &__link{
+        display: flex;
+        align-items: center;
+      }
+
+      &__img {
+        min-height: 85.51px;
+      }
+
+      &__name {
+        font-size: 42px;
+      }
     }
   }
 }

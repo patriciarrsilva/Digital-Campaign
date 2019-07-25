@@ -36,6 +36,14 @@
   }
 }
 
+.loader {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 .negative-button {
   background: none;
   border: none;
@@ -46,6 +54,6 @@
 
 @media (min-width: 1200px) {
   .location-main {
-      height: calc(100vh - 142px);
-    }
+    height: calc(100vh - 142px);
+  }
 }

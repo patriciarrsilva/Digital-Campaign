@@ -13,13 +13,15 @@ self.addEventListener('install', event => {
                     '/digital-campaign/sw.js',
                     '/digital-campaign/manifest.json',
                     '/digital-campaign/index.html',
-                    '/digital-campaign/html/geolocation.html',
+                    '/digital-campaign/html/location.html',
                     '/digital-campaign/html/home.html',
+                    '/digital-campaign/html/amizade.html',
                     '/digital-campaign/css/style.css',
                     '/digital-campaign/js/sw-register.js',
                     '/digital-campaign/js/year.js',
                     '/digital-campaign/js/location.js',
                     '/digital-campaign/js/slider.js',
+                    '/digital-campaign/js/sidepanel.js',
 
                 ])
                 .catch(err => {

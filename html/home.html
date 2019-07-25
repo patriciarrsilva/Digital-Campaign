@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="theme-color" content="#DD052B">
+    <meta name="Tindeirão" content="PWA">
     <link rel="icon" sizes="192x192" href="../img/favicon.jpeg">
     <!-- <link rel="manifest" href="./manifest.json"> -->
     <link rel="stylesheet" href="../css/style.css" />
@@ -18,15 +19,15 @@
     <!-- TOP NAVIGATION MENU MOBILE -->
     <nav class="top-nav-mob">
         <a href="#" class="top-nav-mob__button">
-            <img src="../img/qr2.png" alt="qr icon">
+            <img src="../img/qr.png" alt="qr icon">
         </a>
 
         <a href="./home.html">
-            <img src="../img/home-logo2.png" alt="tindeirão logo">
+            <img src="../img/home-logo.png" alt="tindeirão logo">
         </a>
 
         <button class="top-nav-mob__button" onclick="openNav()">
-            <img src="../img/menu2.png" alt="hamburger icon">
+            <img src="../img/menu.png" alt="hamburger icon">
         </button>
     </nav>
 
@@ -46,53 +47,53 @@
             <div class="top-nav-desk__right">
                 <a href="#" class="top-nav-desk__user"><img src="../img/user.png" alt="profile image"></a>
 
-                <a href="#"><img src=" ../img/qr2.png" alt="qr icon"></a>
+                <a href="#"><img src=" ../img/qr.png" alt="qr icon"></a>
             </div>
         </div>
     </nav>
 
     <!-- SIDEPANEL MOBILE ONLY -->
     <div id="sidepanel" class="sidepanel">
-        <div class="account">
-            <div class="account__container">
+        <div class="sidepanel-account">
+            <div class="sidepanel-account__container">
                 <button class="close-button" onclick="closeNav()">
                     <img src="../img/close.png" alt="close button" class="close-button__img">
                 </button>
 
-                <div class="profile-id">
-                    <img src="../img/user.png" alt="profile image" class="profile-id__photo">
-                    <p class="profile-id__name">Larocas</p>
+                <div class="sidepanel-account__profile">
+                    <img src="../img/user.png" alt="profile image" class="sidepanel-account__photo">
+                    <p class="sidepanel-account__name">C. Redondo</p>
                 </div>
 
-                <ul class="profile-info">
-                    <li class="profile-info__link"><a href="#">Perfil</a></li>
-                    <li class="profile-info__link"><a href="#">Os meus desafios</a></li>
+                <ul class="sidepanel-account__links">
+                    <li class="sidepanel-account__link"><a href="#">Perfil</a></li>
+                    <li class="sidepanel-account__link"><a href="#">Os meus desafios</a></li>
                 </ul>
 
                 <button class="logout-button">Sair da conta</button>
             </div>
         </div>
 
-        <div class="side-nav">
-            <ul class="app-nav">
+        <div class="sidepanel-navigation">
+            <ul class="sidepanel-navigation__app">
                 <li><a href="amizade.html">Amizade</a></li>
-                <li class="app-nav__mid-link"><a href="#">Tradição</a></li>
+                <li class="sidepanel-navigation__mid-link"><a href="#">Tradição</a></li>
                 <li><a href=#>Academia</a></li>
             </ul>
 
-            <div class="nav-beirao">
-                <h2 class="nav-beirao__title">Família Beirão</h2>
+            <div class="sidepanel-navigation__beirao">
+                <h2 class="sidepanel-navigation__title">Família Beirão</h2>
 
-                <ul class="nav-beirao__links">
-                    <li class="nav-beirao__link">
+                <ul class="sidepanel-navigation__links">
+                    <li class="sidepanel-navigation__link">
                         <a href="https://www.licorbeirao.com" target="_blank" rel="noopener">Website</a>
                     </li>
-                    <li class="nav-beirao__link">
+                    <li class="sidepanel-navigation__link">
                         <a href="https://www.beirao.club" target="_blank" rel="noopener">Clube Beirão</a>
                     </li>
                 </ul>
 
-                <ul class="nav-beirao__social">
+                <ul class="sidepanel-navigation__social">
                     <li>
                         <a href="https://www.facebook.com/olicordeportugal/" target="_blank" rel="noopener">
                             <img src="../img/fb.png" alt="facebook icon">
@@ -122,7 +123,9 @@
                 </ul>
             </div>
 
-            <footer class="sidepanel__footer"><a href="#">Termos e Condições</a> | <a href="#">Regulamentos</a></footer>
+            <footer class="sidepanel-navigation__footer">
+                <a href="#">Termos e Condições</a> | <a href="#">Regulamentos</a>
+            </footer>
         </div>
     </div>
 

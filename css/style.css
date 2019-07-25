@@ -340,6 +340,7 @@ template {
 
 @font-face {
   font-family: DINCond-BlackAlternate;
+  font-display: auto;
   src: url(../fonts/DINCond-BlackAlternate.otf);
 }
 
@@ -1664,6 +1665,14 @@ input[type="number"]::-webkit-outer-spin-button {
   width: 180.72px;
   padding: 0;
   text-transform: uppercase;
+}
+
+.loader {
+  display: none;
+}
+
+.show {
+  display: block;
 }
 
 .negative-button {

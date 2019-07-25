@@ -3,7 +3,8 @@
 const locationBtn = document.querySelector('.location-button');
 
 function geo_success(position) {
-    // TODO: show some indication that location is being processed (e.g. spinner)
+    document.getElementById('loader').classList.toggle('show');
+
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 

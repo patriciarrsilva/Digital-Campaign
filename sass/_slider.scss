@@ -41,7 +41,7 @@ body {
 
 .swiper- {
   &nav {
-    height: calc(100vh - 70px - 143px - 19px);
+    height: calc(100vh - 70px - 88px - 25px - 29px - 2px - 6px);
     margin-top: 19px;
   }
 
@@ -66,7 +66,7 @@ body {
 @media (min-width: 768px) {
   .swiper- {
     &nav {
-      height: calc(100vh - 142px - 121.59px - 25.1px - 29.36px - 12.33px);
+      height: calc(100vh - 142px - 122px - 25px - 29px - 2px - 12px);
     }
 
     &link {

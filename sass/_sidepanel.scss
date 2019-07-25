@@ -26,8 +26,8 @@
 
     &__photo {
       margin: 0 8px 0 0;
-      height: 52.75px;
-      width: 52.75px;
+      height: 53px;
+      width: 53px;
     }
 
     &__name {
@@ -38,12 +38,12 @@
 
     &__links {
       font-size: $font-s;
-      margin: 19.43px 0 0 0;
+      margin: 19px 0 0 0;
       padding-bottom: 5px;
     }
 
     &__link {
-      margin: 4.5px 0;
+      margin: 5px 0;
     }
   }
 
@@ -52,7 +52,7 @@
 
     &__app {
       font-size: $font-l;
-      padding: 26px 0 34.42px;
+      padding: 26px 0 34px;
       text-transform: uppercase;
     }
 
@@ -67,7 +67,7 @@
 
     &__title {
       font-size: $font-l;
-      margin: 25.69px 0 12px;
+      margin: 26px 0 12px;
       text-transform: uppercase;
     }
 
@@ -82,33 +82,33 @@
     &__social {
       display: flex;
       justify-content: space-between;
-      margin: 25.75px 0 27.09px;
+      margin: 26px 0 27px;
     }
 
     &__footer {
       font-size: $font-xs;
-      margin: 20.69px 0;
+      margin: 21px 0;
       text-align: center;
     }
   }
 }
 
 .close-button {
-  background: transparent;
+  background: none;
   border: none;
-  margin: 14.89px 0 12.21px;
+  margin: 15px 0 12px;
   padding: 0;
   text-align: right;
   width: 100%;
 
   &__img {
-    height: 15.21px;
-    width: 15.08px;
+    height: 15px;
+    width: 15px;
   }
 }
 
 .logout-button {
-  background: transparent;
+  background: none;
   border: none;
   font-size: $font-xs;
   padding: 0;

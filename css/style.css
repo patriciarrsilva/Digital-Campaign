@@ -1155,17 +1155,17 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .verify-button {
-  background: #e54847;
   border: 1px solid #e54847;
   border-radius: 6px;
+  padding: 0;
+  text-transform: uppercase;
+  background: #e54847;
   box-shadow: 0 7px 0 #c14444;
   color: white;
   font-size: 24px;
   height: 45px;
   width: 143px;
   margin: 73px 0 0;
-  padding: 0;
-  text-transform: uppercase;
 }
 
 .warning {
@@ -1188,7 +1188,7 @@ input[type="number"]::-webkit-outer-spin-button {
   }
   .year-header {
     display: block;
-    height: 78.87px;
+    height: 79px;
   }
   .year-header__img {
     height: 100%;
@@ -1203,9 +1203,9 @@ input[type="number"]::-webkit-outer-spin-button {
     margin: 0 12px;
   }
   .verify-button {
-    box-shadow: 0 12.33px 0 #c14444;
+    box-shadow: 0 12px 0 #c14444;
     font-size: 36px;
-    height: 79.29px;
+    height: 79px;
     width: 230px;
   }
 }
@@ -1219,7 +1219,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .top-nav-mob__button {
-  background: transparent;
+  background: none;
   border: none;
   padding: 0;
 }
@@ -1268,7 +1268,7 @@ input[type="number"]::-webkit-outer-spin-button {
     align-items: center;
   }
   .top-nav-desk__user {
-    margin-right: 34.53px;
+    margin-right: 35px;
   }
 }
 
@@ -1302,8 +1302,8 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .sidepanel-account__photo {
   margin: 0 8px 0 0;
-  height: 52.75px;
-  width: 52.75px;
+  height: 53px;
+  width: 53px;
 }
 
 .sidepanel-account__name {
@@ -1314,12 +1314,12 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .sidepanel-account__links {
   font-size: 22px;
-  margin: 19.43px 0 0 0;
+  margin: 19px 0 0 0;
   padding-bottom: 5px;
 }
 
 .sidepanel-account__link {
-  margin: 4.5px 0;
+  margin: 5px 0;
 }
 
 .sidepanel-navigation {
@@ -1328,7 +1328,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .sidepanel-navigation__app {
   font-size: 30px;
-  padding: 26px 0 34.42px;
+  padding: 26px 0 34px;
   text-transform: uppercase;
 }
 
@@ -1343,7 +1343,7 @@ input[type="number"]::-webkit-outer-spin-button {
 
 .sidepanel-navigation__title {
   font-size: 30px;
-  margin: 25.69px 0 12px;
+  margin: 26px 0 12px;
   text-transform: uppercase;
 }
 
@@ -1358,31 +1358,31 @@ input[type="number"]::-webkit-outer-spin-button {
 .sidepanel-navigation__social {
   display: flex;
   justify-content: space-between;
-  margin: 25.75px 0 27.09px;
+  margin: 26px 0 27px;
 }
 
 .sidepanel-navigation__footer {
   font-size: 18px;
-  margin: 20.69px 0;
+  margin: 21px 0;
   text-align: center;
 }
 
 .close-button {
-  background: transparent;
+  background: none;
   border: none;
-  margin: 14.89px 0 12.21px;
+  margin: 15px 0 12px;
   padding: 0;
   text-align: right;
   width: 100%;
 }
 
 .close-button__img {
-  height: 15.21px;
-  width: 15.08px;
+  height: 15px;
+  width: 15px;
 }
 
 .logout-button {
-  background: transparent;
+  background: none;
   border: none;
   font-size: 18px;
   padding: 0;
@@ -1425,16 +1425,16 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .location-button {
-  background: #e54847;
   border: 1px solid #e54847;
   border-radius: 6px;
+  padding: 0;
+  text-transform: uppercase;
+  background: #e54847;
   box-shadow: 0 7px 0 #c14444;
   color: white;
   font-size: 24px;
   height: 45px;
-  width: 180.72px;
-  padding: 0;
-  text-transform: uppercase;
+  width: 181px;
 }
 
 .loader {
@@ -1487,7 +1487,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .bottom-nav {
-  margin: 25.1px auto 29.36px;
+  margin: 25px auto 29px;
 }
 
 .bottom-list {
@@ -1496,16 +1496,19 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .bottom-button {
+  border: 1px solid none;
+  border-radius: 6px;
+  padding: 0;
+  text-transform: uppercase;
   flex: 1;
   background: #fff;
-  border-radius: 6px;
   box-shadow: 0 7px 0 #c2c2c2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 88px;
-  margin: 0 11.69px;
+  margin: 0 12px;
 }
 
 .bottom-button:active {
@@ -1531,19 +1534,19 @@ input[type="number"]::-webkit-outer-spin-button {
     max-width: 1000px;
   }
   .bottom-button {
-    box-shadow: 0 12.33px 0 #c2c2c2;
-    height: 121.6px;
+    box-shadow: 0 12px 0 #c2c2c2;
+    height: 122px;
     margin: 0 13px;
   }
   .bottom-button:active {
-    box-shadow: 0 12.33px 0 #c14444;
+    box-shadow: 0 12px 0 #c14444;
   }
   .bottom-button__link {
     display: flex;
     align-items: center;
   }
   .bottom-button__img {
-    min-height: 85.51px;
+    min-height: 86px;
   }
   .bottom-button__name {
     font-size: 42px;
@@ -1590,7 +1593,7 @@ body {
 
 /* MINE */
 .swiper-nav {
-  height: calc(100vh - 70px - 143px - 19px);
+  height: calc(100vh - 70px - 88px - 25px - 29px - 2px - 6px);
   margin-top: 19px;
 }
 
@@ -1613,7 +1616,7 @@ body {
 
 @media (min-width: 768px) {
   .swiper-nav {
-    height: calc(100vh - 142px - 121.59px - 25.1px - 29.36px - 12.33px);
+    height: calc(100vh - 142px - 122px - 25px - 29px - 2px - 12px);
   }
   .swiper-link {
     width: 90%;
@@ -1635,22 +1638,25 @@ body {
 }
 
 .amizade-button {
+  border: 1px solid #fff;
+  border-radius: 6px;
+  padding: 0;
+  text-transform: uppercase;
   flex: 1 1 calc(50% - 5.5px * 2);
   background: #fff;
-  border-radius: 6px;
   box-shadow: 0 7px 0 #c2c2c2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 212px;
-  margin: 0 5.5px 35px;
+  margin: 0 6px 35px;
   padding: 10px;
 }
 
 .amizade-button__img {
-  max-height: 138.17px;
-  max-width: 119.67px;
+  max-height: 139px;
+  max-width: 120px;
 }
 
 .amizade-button__description {
@@ -1665,7 +1671,7 @@ body {
 
 @media (min-width: 768px) {
   .amizade-button {
-    flex: 1 1 calc(100% / 3 - 5.5px * 2);
+    flex: 1 1 calc(100% / 3 - 6px * 2);
   }
 }
 
@@ -1678,7 +1684,7 @@ body {
   }
   .amizade-button {
     flex: 1 1 calc(25% - 13px * 2);
-    box-shadow: 0 12.33px 0 #c2c2c2;
+    box-shadow: 0 12px 0 #c2c2c2;
     height: 250px;
     margin: 0 13px 35px;
   }

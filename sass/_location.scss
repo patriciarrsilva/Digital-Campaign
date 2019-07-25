@@ -23,16 +23,13 @@
   }
 
   &button {
+    @include button($red);
     background: $red;
-    border: 1px solid $red;
-    border-radius: 6px;
-    box-shadow: 0 7px 0 $shadow-red;
+    box-shadow: 0 $shadow-mobile 0 $shadow-red;
     color: white;
     font-size: $font-m;
     height: 45px;
-    width: 180.72px;
-    padding: 0;
-    text-transform: uppercase;
+    width: 181px;
   }
 }
 

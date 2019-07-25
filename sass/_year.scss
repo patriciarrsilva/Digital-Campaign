@@ -45,17 +45,14 @@
 }
 
 .verify-button {
+  @include button($red);
   background: $red;
-  border: 1px solid $red;
-  border-radius: 6px;
-  box-shadow: 0 7px 0 $shadow-red;
+  box-shadow: 0 $shadow-mobile 0 $shadow-red;
   color: white;
   font-size: $font-m;
   height: 45px;
   width: 143px;
   margin: 73px 0 0;
-  padding: 0;
-  text-transform: uppercase;
 }
 
 .warning {
@@ -80,7 +77,7 @@
 
     &header {
       display: block;
-      height: 78.87px;
+      height: 79px;
 
       &__img {
         height: 100%;
@@ -101,9 +98,9 @@
   }
 
   .verify-button {
-    box-shadow: 0 12.33px 0 $shadow-red;
+    box-shadow: 0 $shadow-desk 0 $shadow-red;
     font-size: 36px;
-    height: 79.29px;
+    height: 79px;
     width: 230px;
   }
 }

@@ -14,21 +14,21 @@
   }
 
   &button {
+    @include button($white);
     flex: 1 1 calc(50% - 5.5px * 2);
     background: $white;
-    border-radius: 6px;
-    box-shadow: 0 7px 0 $grey;
+    box-shadow: 0 $shadow-mobile 0 $grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 212px;
-    margin: 0 5.5px 35px;
+    margin: 0 6px 35px;
     padding: 10px;
 
     &__img {
-      max-height: 138.17px;
-      max-width: 119.67px;
+      max-height: 139px;
+      max-width: 120px;
     }
 
     &__description {
@@ -46,7 +46,7 @@
 @media (min-width: 768px) {
   .amizade- {
     &button {
-      flex: 1 1 calc(100% / 3 - 5.5px * 2);
+      flex: 1 1 calc(100% / 3 - 6px * 2);
     }
   }
 }
@@ -63,7 +63,7 @@
 
     &button {
       flex: 1 1 calc(25% - 13px * 2);
-      box-shadow: 0 12.33px 0 $grey;
+      box-shadow: 0 $shadow-desk 0 $grey;
       height: 250px;
       margin: 0 13px 35px;
 

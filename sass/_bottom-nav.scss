@@ -1,6 +1,6 @@
 .bottom- {
   &nav {
-    margin: 25.1px auto 29.36px;
+    margin: 25px auto 29px;
   }
 
   &list {
@@ -9,20 +9,20 @@
   }
 
   &button {
+    @include button(none);
     flex: 1;
     background: $white;
-    border-radius: 6px;
-    box-shadow: 0 7px 0 $grey;
+    box-shadow: 0 $shadow-mobile 0 $grey;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 88px;
-    margin: 0 11.69px;
+    margin: 0 12px;
 
     &:active {
       background: $red;
-      box-shadow: 0 7px 0 $shadow-red;
+      box-shadow: 0 $shadow-mobile 0 $shadow-red;
 
       & .bottom-button__name {
         color: $white;
@@ -47,12 +47,12 @@
     }
 
     &button {
-      box-shadow: 0 12.33px 0 $grey;
-      height: 121.6px;
+      box-shadow: 0 $shadow-desk 0 $grey;
+      height: 122px;
       margin: 0 13px;
 
       &:active {
-        box-shadow: 0 12.33px 0 $shadow-red;
+        box-shadow: 0 $shadow-desk 0 $shadow-red;
       }
 
       &__link {
@@ -61,7 +61,7 @@
       }
 
       &__img {
-        min-height: 85.51px;
+        min-height: 86px;
       }
 
       &__name {

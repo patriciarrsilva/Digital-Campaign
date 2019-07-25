@@ -17,6 +17,7 @@ self.addEventListener('install', event => {
                     '/digital-campaign/html/home.html',
                     '/digital-campaign/html/amizade.html',
                     '/digital-campaign/css/style.css',
+                    '/digital-campaign/fonts/DINCond-BlackAlternate.otf',
                     '/digital-campaign/js/sw-register.js',
                     '/digital-campaign/js/year.js',
                     '/digital-campaign/js/location.js',

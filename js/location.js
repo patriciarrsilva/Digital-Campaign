@@ -3,8 +3,6 @@
 const locationBtn = document.querySelector('.location-button');
 
 function geo_success(position) {
-    document.getElementById('loader').classList.toggle('show');
-
     const latitude = position.coords.latitude;
     const longitude = position.coords.longitude;
 
@@ -30,6 +28,8 @@ function geo_error(error) {
 }
 
 locationBtn.addEventListener('click', function () {
+    document.getElementById('loader').classList.toggle('loader-show');
+
     if (!navigator.geolocation) {
         console.log('Geolocation is not supported by your browser');
     } else {

@@ -12,12 +12,12 @@
   }
 
   &title {
-    font-size: 30px;
+    font-size: $font-l;
     margin: 0;
   }
 
   &description {
-    font-size: 22px;
+    font-size: $font-s;
     margin: 0;
     max-width: 95%;
   }
@@ -28,7 +28,7 @@
     border-radius: 6px;
     box-shadow: 0 7px 0 $shadow-red;
     color: white;
-    font-size: 24px;
+    font-size: $font-m;
     height: 45px;
     width: 180.72px;
     padding: 0;
@@ -40,15 +40,41 @@
   display: none;
 }
 
-.show {
+.loader-show {
   display: block;
+  border: 8px solid $white;
+  border-radius: 50%;
+  border-top: 8px solid $red;
+  width: 60px;
+  height: 60px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 .negative-button {
   background: none;
   border: none;
   color: $red;
-  font-size: 18px;
+  font-size: $font-xs;
   text-transform: uppercase;
 }
 

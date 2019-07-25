@@ -31,7 +31,7 @@
 
     &__name {
       color: $black;
-      font-size: 18px;
+      font-size: $font-xs;
       margin: 0;
       text-transform: uppercase;
     }
@@ -65,7 +65,7 @@
       }
 
       &__name {
-        font-size: 42px;
+        font-size: $font-xl;
       }
     }
   }

@@ -31,13 +31,13 @@
     }
 
     &__name {
-      font-size: 30px;
+      font-size: $font-l;
       margin: 0;
       text-transform: uppercase;
     }
 
     &__links {
-      font-size: 22px;
+      font-size: $font-s;
       margin: 19.43px 0 0 0;
       padding-bottom: 5px;
     }
@@ -51,7 +51,7 @@
     padding: 0 25px;
 
     &__app {
-      font-size: 30px;
+      font-size: $font-l;
       padding: 26px 0 34.42px;
       text-transform: uppercase;
     }
@@ -66,13 +66,13 @@
     }
 
     &__title {
-      font-size: 30px;
+      font-size: $font-l;
       margin: 25.69px 0 12px;
       text-transform: uppercase;
     }
 
     &__links {
-      font-size: 22px;
+      font-size: $font-s;
     }
 
     &__link {
@@ -86,7 +86,7 @@
     }
 
     &__footer {
-      font-size: 18px;
+      font-size: $font-xs;
       margin: 20.69px 0;
       text-align: center;
     }
@@ -110,7 +110,7 @@
 .logout-button {
   background: transparent;
   border: none;
-  font-size: 18px;
+  font-size: $font-xs;
   padding: 0;
   position: absolute;
   bottom: 8px;

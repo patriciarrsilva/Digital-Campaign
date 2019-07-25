@@ -11,7 +11,7 @@
   }
 
   &title {
-    font-size: 24px;
+    font-size: $font-m;
     margin: 0;
     margin: 0 0 29px;
     text-transform: uppercase;
@@ -19,7 +19,7 @@
 
   &footer {
     color: $text-red;
-    font-size: 18px;
+    font-size: $font-xs;
   }
 
   &text {
@@ -50,7 +50,7 @@
   border-radius: 6px;
   box-shadow: 0 7px 0 $shadow-red;
   color: white;
-  font-size: 24px;
+  font-size: $font-m;
   height: 45px;
   width: 143px;
   margin: 73px 0 0;
@@ -61,7 +61,7 @@
 .warning {
   background: $text-red;
   color: $white;
-  font-size: 30px;
+  font-size: $font-m;
   margin: 0 auto;
   padding: 20px;
   max-width: 95%;
@@ -92,7 +92,7 @@
     }
 
     &footer {
-      font-size: 24px;
+      font-size: $font-m;
     }
   }
 

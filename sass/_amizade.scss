@@ -1,7 +1,7 @@
 .amizade- {
   &title {
     color: $text-red;
-    font-size: 30px;
+    font-size: $font-l;
     margin: 19px 0 43px;
     text-transform: uppercase;
   }
@@ -32,7 +32,7 @@
     }
 
     &__description {
-      font-size: 24px;
+      font-size: $font-m;
       margin: 0;
       text-transform: uppercase;
     }
@@ -68,7 +68,7 @@
       margin: 0 13px 35px;
 
       &__description {
-        font-size: 42px;
+        font-size: $font-xl;
       }
     }
   }
@@ -78,7 +78,7 @@
     border: none;
     color: $text-red;
     display: block;
-    font-size: 42px;
+    font-size: $font-xl;
     margin: 0 auto 43px;
     padding: 0;
     text-transform: uppercase;

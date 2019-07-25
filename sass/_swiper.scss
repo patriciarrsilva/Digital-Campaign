@@ -702,8 +702,9 @@ button.swiper-pagination-bullet {
 /* MINE */
 
 .swiper-pagination-red .swiper-pagination-bullet-active {
-  background: $red;
-  box-shadow: 0 4px 0 $white;
+  background: $white;
+  box-shadow: 0 4px 0 $red;
+  transform: translateY(-4px);
 }
 
 .swiper-pagination-bullets {

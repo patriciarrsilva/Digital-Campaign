@@ -6,8 +6,8 @@ const app = (() => {
     let isSubscribed = false;
     let swRegistration = null;
 
-    const notifyButton = document.querySelector('.js-notify-btn'); // Notify me!
-    const pushButton = document.querySelector('.js-push-btn'); // Enable Push Messaging
+    // const notifyButton = document.querySelector('.js-notify-btn'); // Notify me!
+    // const pushButton = document.querySelector('.js-push-btn'); // Enable Push Messaging
 
     // check for notification support (the real app should perform some logic to compensate for lack of support)
     if (!('Notification' in window)) {
@@ -31,7 +31,7 @@ const app = (() => {
                     body: 'First notification!',
                     // add a tag to the notification
                     // tag: 'id1',
-                    icon: 'img/notification-flat.png',
+                    icon: 'img/logo192.png',
                     vibrate: [100, 50, 100],
                     data: {
                         dateOfArrival: Date.now(),
@@ -58,14 +58,14 @@ const app = (() => {
     // Set the initial subscription value
     function initializeUI() {
         // add a click event listener to the "Enable Push" button
-        pushButton.addEventListener('click', () => {
+        /*pushButton.addEventListener('click', () => {
             pushButton.disabled = true;
             if (isSubscribed) {
                 unsubscribeUser();
             } else {
                 subscribeUser();
             }
-        });
+        });*/
 
         swRegistration.pushManager.getSubscription()
             .then(subscription => {
@@ -84,7 +84,7 @@ const app = (() => {
     }
 
     // add VAPID public key
-    const applicationServerPublicKey = 'BPACQA4C5Kc5-VYEPFGByrUpwEp_NU-bKqRsWCPZB63b1ibg1cjaAC6a_7DxlLy35g4RgWU6xwSipu2nPactiD8';
+    const applicationServerPublicKey = 'BDTVS9PfScWnyqk6EVxccqT6DqOZhlQfQ8YJ-C7AcEEvr0vIZ2NK_0g6qFLZ1AXlSeC5V2fcitHPOk0QgNhwUjY';
 
     // subscribe to the push service
     function subscribeUser() {
@@ -150,19 +150,19 @@ const app = (() => {
 
     function updateBtn() {
         if (Notification.permission === 'denied') {
-            pushButton.textContent = 'Push Messaging Blocked';
-            pushButton.disabled = true;
+            // pushButton.textContent = 'Push Messaging Blocked';
+            // pushButton.disabled = true;
             updateSubscriptionOnServer(null);
             return;
         }
 
-        if (isSubscribed) {
+        /*if (isSubscribed) {
             pushButton.textContent = 'Disable Push Messaging';
         } else {
             pushButton.textContent = 'Enable Push Messaging';
         }
 
-        pushButton.disabled = false;
+        pushButton.disabled = false;*/
     }
 
     function urlB64ToUint8Array(base64String) {
@@ -180,10 +180,9 @@ const app = (() => {
         return outputArray;
     }
 
-    notifyButton.addEventListener('click', () => {
-        console.log('here');
+    /*notifyButton.addEventListener('click', () => {
         displayNotification();
-    });
+    });*/
 
     // register service worker
     if ('serviceWorker' in navigator) {

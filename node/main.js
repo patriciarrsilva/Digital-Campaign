@@ -7,10 +7,10 @@
 const webPush = require('web-push');
 
 // Subscription Object (this changes, so it's written in the console so we can update it for testing purposes)
-const pushSubscription = { "endpoint": "https://fcm.googleapis.com/fcm/send/fSCrVM1D2Ro:APA91bGufc-DU2qD-zKduuY6OkXed0Pl5jPjSR1qEHYqClv6G7ywgLpEwl9AYuAZ0DVaxHlnGp3bv-hPGa7GxMgmcf_5XWaipGOBkm3IbnnbeyAFbMPNOnzen9GY0EfaJOLOb0a6I6_r", "expirationTime": null, "keys": { "p256dh": "BJp0fvk0o3GpruWfdlPLWUO5DOqB1Hdv4qEzWsg42-VPdxnVY_y6wrOjg_FDQOCuw-FMFlii_wz5iu2O1DPdgcY", "auth": "zlcuNun2U5P1xDkl0_eNJw" } };
+const pushSubscription = { "endpoint": "https://fcm.googleapis.com/fcm/send/cooJ-_mpuGk:APA91bGQOufUtOFwsh5NpZ32E15w7YJrjzZMIVMxgn1QGNyoKs-fCqfhFQ0rVBOaxvc_RWGVZehUz2UoVyFPsfpgmQEMS4YODZie8CMSvK44pmAMHCtQ1lcwO5ucScbTDC-yXB6FOseZ", "expirationTime": null, "keys": { "p256dh": "BNQNfqtPH1DhZ7PTh6Cx1W4O7LTB3wpFXDf3KtajztqH8PmCPzTM_2ohZAp3nBWLRWkd87jrVJqDnM1Jf9Ukjvs", "auth": "HLuq1ENGLHK4w8ww8JH8zw" } };
 
-const vapidPublicKey = 'BNDRz-ZFjAqEQ5CTbJPxXC74uL3Xmz3-PuA6SixRGjrfI0NCc6vWcaHHCunMY4oPvH7ZPWHu9vDV1dvUJ6p9Uhs';
-const vapidPrivateKey = 'Bv8w3l9woJtK1aFoBjEwIPs2lqyDFGM96SyeRNIYqhA';
+const vapidPublicKey = 'BDTVS9PfScWnyqk6EVxccqT6DqOZhlQfQ8YJ-C7AcEEvr0vIZ2NK_0g6qFLZ1AXlSeC5V2fcitHPOk0QgNhwUjY';
+const vapidPrivateKey = 'PaJCQBtqrG3Ql0OvlhUD0pnauzrLoO3qO2tGlHvRMLQ';
 
 const payload = 'Here is a payload!';
 

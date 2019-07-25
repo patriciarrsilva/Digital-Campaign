@@ -22,8 +22,7 @@ self.addEventListener('install', event => {
                     '/digital-campaign/js/year.js',
                     '/digital-campaign/js/location.js',
                     '/digital-campaign/js/slider.js',
-                    '/digital-campaign/js/sidepanel.js',
-
+                    '/digital-campaign/js/sidepanel.js'
                 ])
                 .catch(err => {
                     console.log('Caches open failed: ' + err);

@@ -10,24 +10,86 @@
   text-align: left;
   transition: 0.5s;
 
-  &__footer {
-    font-size: 18px;
-    margin: 20.69px 0;
-    text-align: center;
+  &-account {
+    background: $white;
+    border-bottom: 9px solid $text-red;
+    position: relative;
+
+    &__container {
+      padding: 0 25px;
+    }
+
+    &__profile {
+      display: flex;
+      align-items: center;
+    }
+
+    &__photo {
+      margin: 0 8px 0 0;
+      height: 52.75px;
+      width: 52.75px;
+    }
+
+    &__name {
+      font-size: 30px;
+      margin: 0;
+      text-transform: uppercase;
+    }
+
+    &__links {
+      font-size: 22px;
+      margin: 19.43px 0 0 0;
+      padding-bottom: 5px;
+    }
+
+    &__link {
+      margin: 4.5px 0;
+    }
   }
-}
 
-.open {
-  width: 100vw;
-}
-
-.account {
-  background: $white;
-  border-bottom: 9px solid $text-red;
-  position: relative;
-
-  &__container {
+  &-navigation {
     padding: 0 25px;
+
+    &__app {
+      font-size: 30px;
+      padding: 26px 0 34.42px;
+      text-transform: uppercase;
+    }
+
+    &__mid-link {
+      padding: 26px 0;
+    }
+
+    &__beirao {
+      border-bottom: 1px solid $text-red;
+      border-top: 1px solid $text-red;
+    }
+
+    &__title {
+      font-size: 30px;
+      margin: 25.69px 0 12px;
+      text-transform: uppercase;
+    }
+
+    &__links {
+      font-size: 22px;
+    }
+
+    &__link {
+      margin: 9px 0;
+    }
+
+    &__social {
+      display: flex;
+      justify-content: space-between;
+      margin: 25.75px 0 27.09px;
+    }
+
+    &__footer {
+      font-size: 18px;
+      margin: 20.69px 0;
+      text-align: center;
+    }
   }
 }
 
@@ -45,34 +107,6 @@
   }
 }
 
-.profile- {
-  &id {
-    display: flex;
-    align-items: center;
-
-    &__photo {
-      margin: 0 8px 0 0;
-      height: 52.75px;
-      width: 52.75px;
-    }
-
-    &__name {
-      font-size: 30px;
-      margin: 0;
-    }
-  }
-
-  &info {
-    font-size: 22px;
-    margin: 19.43px 0 0 0;
-    padding-bottom: 5px;
-
-    &__link {
-      margin: 4.5px 0;
-    }
-  }
-}
-
 .logout-button {
   background: transparent;
   border: none;
@@ -83,43 +117,8 @@
   right: 29px;
 }
 
-.side-nav {
-  padding: 0 25px;
-}
-
-.app-nav {
-  font-size: 30px;
-  padding: 26px 0 34.42px;
-  text-transform: uppercase;
-
-  &__mid-link {
-    padding: 26px 0;
-  }
-}
-
-.nav-beirao {
-  border-bottom: 1px solid $text-red;
-  border-top: 1px solid $text-red;
-
-  &__title {
-    font-size: 30px;
-    margin: 25.69px 0 12px;
-    text-transform: uppercase;
-  }
-
-  &__links {
-    font-size: 22px;
-  }
-
-  &__link {
-    margin: 9px 0;
-  }
-
-  &__social {
-    display: flex;
-    justify-content: space-between;
-    margin: 25.75px 0 27.09px;
-  }
+.open {
+  width: 100vw;
 }
 
 @media (min-width: 500px) {

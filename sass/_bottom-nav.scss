@@ -1,6 +1,6 @@
 .bottom- {
   &nav {
-    margin: 25.1px auto 0;
+    margin: 25.1px auto 29.36px;
   }
 
   &list {
@@ -19,7 +19,7 @@
     align-items: center;
     height: 88px;
     margin: 0 11.69px;
-    
+
     &:active {
       background: $red;
       box-shadow: 0 7px 0 $shadow-red;
@@ -39,7 +39,7 @@
 }
 
 @media (min-width: 1200px) {
-  .bottom-{
+  .bottom- {
     &list {
       justify-content: space-between;
       margin: 0 auto;
@@ -55,7 +55,7 @@
         box-shadow: 0 12.33px 0 $shadow-red;
       }
 
-      &__link{
+      &__link {
         display: flex;
         align-items: center;
       }

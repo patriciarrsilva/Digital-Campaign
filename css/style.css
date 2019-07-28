@@ -1497,7 +1497,7 @@ body {
   max-height: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .swiper-nav {
     height: calc(100vh - 142px - 122px - 25px - 29px - 2px - 12px);
   }

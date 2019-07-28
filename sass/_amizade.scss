@@ -26,11 +26,6 @@
     margin: 0 6px 35px;
     padding: 10px;
 
-    &__img {
-      max-height: 139px;
-      max-width: 120px;
-    }
-
     &__description {
       font-size: $font-m;
       margin: 0;
@@ -67,6 +62,13 @@
       height: 250px;
       margin: 0 13px 35px;
 
+      &__picture {
+        max-height: 140px;
+      }
+
+      &__img {
+        max-height: 100%;
+      }
       &__description {
         font-size: $font-xl;
       }

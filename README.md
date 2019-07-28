@@ -26,7 +26,7 @@ The learning process culminates in **presenting a pitch to the guest brands' com
 
 To see it:
 
-- click [here](https://patriciarrsilva.github.io/digital-campaign/)
+- click [here](https://patriciarrsilva.github.io/tindeirao/)
 
 or
 

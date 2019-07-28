@@ -1,28 +1,28 @@
 /* service worker file */
 
-let cacheID = 'digital-campaign-v1';
+let cacheID = 'tindeirao-v1';
 
 self.addEventListener('install', event => {
     event.waitUntil(
         caches.open(cacheID).then(cache => {
             console.log('Opened cache');
-            // via localhost, remove all /digital-campaign prefixes from the items (at .addAll([items]))
+            // via localhost, remove all /tindeirao prefixes from the items (at .addAll([items]))
             return cache
                 .addAll([
-                    '/digital-campaign/',
-                    '/digital-campaign/sw.js',
-                    '/digital-campaign/manifest.json',
-                    '/digital-campaign/index.html',
-                    '/digital-campaign/html/location.html',
-                    '/digital-campaign/html/home.html',
-                    '/digital-campaign/html/amizade.html',
-                    '/digital-campaign/css/style.css',
-                    '/digital-campaign/fonts/DINCond-BlackAlternate.otf',
-                    '/digital-campaign/js/sw-register.js',
-                    '/digital-campaign/js/year.js',
-                    '/digital-campaign/js/location.js',
-                    '/digital-campaign/js/slider.js',
-                    '/digital-campaign/js/sidepanel.js'
+                    '/tindeirao/',
+                    '/tindeirao/sw.js',
+                    '/tindeirao/manifest.json',
+                    '/tindeirao/index.html',
+                    '/tindeirao/html/location.html',
+                    '/tindeirao/html/home.html',
+                    '/tindeirao/html/amizade.html',
+                    '/tindeirao/css/style.css',
+                    '/tindeirao/fonts/DINCond-BlackAlternate.otf',
+                    '/tindeirao/js/sw-register.js',
+                    '/tindeirao/js/year.js',
+                    '/tindeirao/js/location.js',
+                    '/tindeirao/js/slider.js',
+                    '/tindeirao/js/sidepanel.js'
                 ])
                 .catch(err => {
                     console.log('Caches open failed: ' + err);
@@ -38,7 +38,7 @@ self.addEventListener('activate', event => {
                 cacheNames
                     .filter(cacheName => {
                         return (
-                            cacheName.startsWith('digital-campaign-v') &&
+                            cacheName.startsWith('tindeirao-v') &&
                             cacheName != cacheID
                         );
                     })

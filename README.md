@@ -1,4 +1,4 @@
-# Digital Campaign
+# Tindeirão - EDIT's Digital Campaign 360º (with the collaboration of Licor Beirão)
 
 ## Overview
 

@@ -2,21 +2,31 @@
 
 ## Overview
 
-No âmbito do projeto final de cada programa – **Digital Campaign 360º** – os alunos desenvolvem **campanhas digitais integradas para marcas de referência**, validando assim o processo de aprendizagem enquanto desenvolvem um projeto para a indústria digital.
-
-Ao nível da metodologia de trabalho, após o **briefing apresentado pela marca**, os alunos são organizados em equipas. Com a **supervisão dos tutores da EDIT. e de profissionais das agências parceiras** desenvolvem o projeto direcionado para os objetivos apresentados.
-
-O processo de aprendizagem culmina com a **apresentação de um pitch aos responsáveis de comunicação das marcas convidadas**, com todas as componentes estratégicas, criativas e de desenvolvimento.
-
 This is a **Progressive Web App** responsive on different sized displays.
 
-It uses a **service worker** to cache some assets for _offline_ use and includes a **web app manifest** to allow the instalation of the app on _mobile_ devices.
+It uses a **service worker** to cache some assets for _offline_ use and includes a **web app manifest** to allow the installation of the app on _mobile_ devices.
+
+This application was developed within [EDIT. - Disruptive Digital Education](https://edit.com.pt/)'s final project of the Front-End Development course – **Digital Campaign 360º**.
+
+Teams consisting of students from various EDIT. courses are created for this project:
+
+- Digital Project Management
+- Digital Product Design & Management
+- Digital Marketing & Strategy
+- User Experience & User interface Design
+- Front-End Development
+
+Following the **briefing presented by reference brands** (for this project - [Licor Beirão](https://www.licorbeirao.com/)), students develop **integrated digital campaigns**, thus validating the learning process while developing a project for the digital industry.
+
+With the **supervision of EDIT. tutors and professionals from partner agencies** the teams develop the project towards the objectives presented.
+
+The learning process culminates in **presenting a pitch to the guest brands' communicators**, with all the strategic, creative and developmental components.
 
 ## Quickstart
 
 To see it:
 
-- click [here]()
+- click [here](https://patriciarrsilva.github.io/digital-campaign/)
 
 or
 
@@ -55,7 +65,7 @@ Service workers require HTTPS, although to facilitate local testing, that policy
 
 ### [Notifications](https://developer.mozilla.org/en-US/docs/Web/API/Notifications_API) and [Push](https://developer.mozilla.org/en-US/docs/Web/API/Push_API) APIs
 
-The Notifications API allows web pages to control the display of system notifications to the end user.
+The Notifications API allows web pages to control the display of system notifications to the end-user.
 
 The Push API gives web applications the ability to receive messages pushed to them from a server, whether or not the web app is in the foreground, or even currently loaded, on a user agent.
 
@@ -93,7 +103,7 @@ Necessary for Autoprefixer.
 
 ### [Autoprefixer](https://github.com/postcss/autoprefixer)
 
-PostCSS plugin to parse CSS and add vendor prefixes to CSS rules. Used here with defaults browserslist.
+PostCSS plugin to parse CSS and add vendor prefixes to CSS rules. Used here with defaults browsers list.
 
 ### [clean-css](https://github.com/jakubpawlowicz/clean-css-cli)
 

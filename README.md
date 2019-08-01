@@ -8,7 +8,7 @@ It uses a **service worker** to cache some assets for _offline_ use and includes
 
 This application was developed within [EDIT. - Disruptive Digital Education](https://edit.com.pt/)'s final project of the Front-End Development course – **Digital Campaign 360º**.
 
-Teams consisting of students from various EDIT. courses are created for this project:
+Teams consisting of students from various EDIT. courses were created for this project:
 
 - Digital Project Management
 - Digital Product Design & Management

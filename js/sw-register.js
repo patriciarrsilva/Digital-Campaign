@@ -189,7 +189,9 @@ const app = (() => {
         window.addEventListener('load', () => {
             console.log('Service Worker and Push is supported');
 
-            navigator.serviceWorker.register('sw.js')
+            navigator.serviceWorker.register('sw.js', {
+                scope: '/tindeirao/'
+            })
                 .then(swReg => {
                     console.log('Service Worker is registered', swReg);
 

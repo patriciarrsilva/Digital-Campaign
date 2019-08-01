@@ -16,7 +16,7 @@ self.addEventListener('install', event => {
                     '/tindeirao/html/location.html',
                     '/tindeirao/html/home.html',
                     '/tindeirao/html/amizade.html',
-                    '/tindeirao/css/style.css',
+                    '/tindeirao/css/style.min.css',
                     '/tindeirao/fonts/DINCond-BlackAlternate.otf',
                     '/tindeirao/js/sw-register.js',
                     '/tindeirao/js/year.js',
